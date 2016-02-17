@@ -47,12 +47,45 @@
         <a href="">Más info</a>
         <a href="">Ver Ahora 2,95€</a>
         <!-- / movie call to action -->
-        
+
       </section>
       <!-- / section: hero -->
 
       <!-- section: catalogue -->
       <section>
+
+          <!-- catalogue filter -->
+            <form>
+              <label for="filter">Filtrar por</label>
+                <fieldset name="filter" id="filter">
+
+                  <select name="movie-type">
+                    <option>Tipo</option>
+                  </select>
+
+                  <select name="movie-genre">
+                    <option>Género</option>
+                  </select>
+
+                  <label for="new-releases">
+                    <input type="checkbox" name="new-releases" id="new-releases"> Solo novedades
+                  </label>
+
+                </fieldset>
+            </form>
+          <!-- / catalogue filter -->
+
+          <!-- catalogue sort-by -->
+
+          <form>
+            <label for="catalogue-sort">Ordenar por</label>
+            <select name="catalogue-sort">
+              <option>Más populares</option>
+            </select>
+          </form>
+
+          <!-- / catalogue sort-by -->
+
       </section>
       <!-- / section: catalogue -->
 
