@@ -8,6 +8,7 @@
     </head>
 
     <body>
+
       <!-- header -->
       <header>
         <!-- logo -->
@@ -28,128 +29,127 @@
       </header>
       <!-- / header -->
 
-      <!-- section: hero -->
-      <section>
+      <main>
+        <!-- section: hero -->
+        <section>
 
-        <h1>Los Vengadores: La Era de Ultrón</h1>
+          <h1>Los Vengadores: La Era de Ultrón</h1>
 
-        <!-- movie details -->
-        <aside itemscope>
-          <time datetime="2015">2015</time>
-          <span itemprop="rating">+18</span>
-          <span itemprop="quality">HD</span>
-          <time datetime="1H30M">1h 30min</time>
-          <span itemprop="score">****</span>
-        </aside>
+          <!-- movie details -->
+          <aside itemscope>
+            <time datetime="2015">2015</time>
+            <span itemprop="rating">+18</span>
+            <span itemprop="quality">HD</span>
+            <time datetime="1H30M">1h 30min</time>
+            <span itemprop="score">****</span>
+          </aside>
 
-        <!-- hero controls -->
-          <ul>
-            <li><a href="">anterior</a></li>
-            <li><a href="">siguiente</a></li>
-          </ul>
-        <!-- / hero controls -->
+          <!-- hero controls -->
+            <ul>
+              <li><a href="">anterior</a></li>
+              <li><a href="">siguiente</a></li>
+            </ul>
+          <!-- / hero controls -->
 
-        <!-- / movie details -->
+          <!-- / movie details -->
 
-        <!-- movie call to action -->
-        <a href="">Más info</a>
-        <a href="">Ver Ahora 2,95€</a>
-        <!-- / movie call to action -->
+          <!-- movie call to action -->
+          <a href="">Más info</a>
+          <a href="">Ver Ahora 2,95€</a>
+          <!-- / movie call to action -->
 
-      </section>
-      <!-- / section: hero -->
+        </section>
+        <!-- / section: hero -->
 
-      <!-- section: catalogue -->
-      <section>
+        <!-- section: catalogue -->
+        <section>
 
-          <!-- catalogue filter -->
+            <!-- catalogue filter -->
+              <form>
+                <label for="filter">Filtrar por</label>
+                  <fieldset name="filter" id="filter">
+
+                    <select name="movie-type">
+                      <option>Tipo</option>
+                    </select>
+
+                    <select name="movie-genre">
+                      <option>Género</option>
+                    </select>
+
+                    <label for="new-releases">
+                      <input type="checkbox" name="new-releases" id="new-releases"> Solo novedades
+                    </label>
+
+                  </fieldset>
+              </form>
+            <!-- / catalogue filter -->
+
+            <!-- catalogue sort-by -->
+
             <form>
-              <label for="filter">Filtrar por</label>
-                <fieldset name="filter" id="filter">
-
-                  <select name="movie-type">
-                    <option>Tipo</option>
-                  </select>
-
-                  <select name="movie-genre">
-                    <option>Género</option>
-                  </select>
-
-                  <label for="new-releases">
-                    <input type="checkbox" name="new-releases" id="new-releases"> Solo novedades
-                  </label>
-
-                </fieldset>
+              <label for="catalogue-sort">Ordenar por</label>
+              <select name="catalogue-sort">
+                <option>Más populares</option>
+              </select>
             </form>
-          <!-- / catalogue filter -->
 
-          <!-- catalogue sort-by -->
+            <ul>
+              <li>
+               <a href="#"><img src="images/posters/127-dias.jpg" alt="Póster 127 Horas"></a>
+               <a href="#"><h3>127 Días</h3></a>
+               <p>Lorem ipsum dolor sit amet consectetur... <a href="#">Más</a></p>
+               <span itemprop="score">****</span>
+               <a href="">2,95€</a>
+              </li>
+            </ul>
 
-          <form>
-            <label for="catalogue-sort">Ordenar por</label>
-            <select name="catalogue-sort">
-              <option>Más populares</option>
-            </select>
-          </form>
+            Tenemos 456 referencias
+            <a href="">Ver más</a>
 
+            <!-- / catalogue sort-by -->
+            </section>
+        <!-- / section: catalogue -->
+
+        <!-- section: publishers -->
+        <section>
           <ul>
-            <li>
-              <figure>
-               <img src="images/posters/127-dias.jpg" alt="Póster 127 Horas">
-               <figcaption>127 Días</figcaption>
-             </figure>
-             <h3>127 Días</h3>
-             <p>Lorem ipsum dolor sit amet consectetur... <a href="#">Más</a></p>
-             <span itemprop="score">****</span>
-             <a href="">2,95€</a>
-            </li>
+            <li><a href="">Dreamworks</a></li>
+            <li><a href="">Filmax</a></li>
+            <li><a href="">Miramax</a></li>
+            <li><a href="">Universal</a></li>
           </ul>
+          <a href="#">Otras distribuidoras</a>
+        </section>
+        <!-- / section: publishers -->
 
-          Tenemos 456 referencias
-          <a href="">Ver más</a>
+        <!-- section: steps -->
+        <section>
 
-          <!-- / catalogue sort-by -->
-          </section>
-      <!-- / section: catalogue -->
+          <ol>
+            <li>
+              <dl>
+                <dt>Elige tu película</dt>
+                <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>Cómprala con un click</dt>
+                <dd>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>Disfrútala donde quieras</dt>
+                <dd>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</dd>
+              </dl>
+            </li>
+          </ol>
 
-      <!-- section: publishers -->
-      <section>
-        <ul>
-          <li><a href="">Dreamworks</a></li>
-          <li><a href="">Filmax</a></li>
-          <li><a href="">Miramax</a></li>
-          <li><a href="">Universal</a></li>
-        </ul>
-        <a href="#">Otras distribuidoras</a>
-      </section>
-      <!-- / section: publishers -->
-
-      <!-- section: steps -->
-      <section>
-
-        <ol>
-          <li>
-            <dl>
-              <dt>Elige tu película</dt>
-              <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
-            </dl>
-          </li>
-          <li>
-            <dl>
-              <dt>Cómprala con un click</dt>
-              <dd>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</dd>
-            </dl>
-          </li>
-          <li>
-            <dl>
-              <dt>Disfrútala donde quieras</dt>
-              <dd>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</dd>
-            </dl>
-          </li>
-        </ol>
-
-      </section>
-      <!-- / section: steps -->
+        </section>
+        <!-- / section: steps -->
+      </main>
 
       <!-- main footer -->
       <footer>
