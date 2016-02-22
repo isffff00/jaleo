@@ -59,6 +59,8 @@
         %li 2 nominaciones Globos de Oro
         %li 1 nominación Oscar (guión)
 
+
+      /= section: excerpt
       %h3 Sinopsis
       %article
         %blockquote
@@ -75,3 +77,69 @@
           %a{:href=>"#"} Tag 3
           |
           %a{:href=>"#"} Tag 4
+
+      /= section: technical details
+      %h3
+        %dl
+          %dt Director
+          %dd Jos Whedon
+          %dt Productora
+          %dd Marvel Studios
+          %dt Género
+          %dd Acción y aventura
+          %dt Duración
+          %dd 1h 34 min
+          %dt Formato
+          %dd HD Panorámico
+          %dt Calificación
+          %dd +18
+          %dt Idiomas
+          %dd
+            %ul
+              %li Español
+              %li Inglés
+              %li Francés
+              %li Alemán
+              %li
+                %a{:href=>"#"} Más
+          %dt Subtítulos
+          %dd
+            %ul
+              %li Español
+              %li Inglés
+              %li Francés
+              %li Alemán
+
+        /= section: recaudación
+        %h3 Recaudación
+        %table
+          %tr
+            %th Estreno
+            %th Zona
+            %th Importa ($)
+            %th Espectadores
+          %tr
+            %td 21/abr/2015
+            %td Europa
+            %td 1.75M
+            %td 2.5M
+          %tr
+            %td 5/ene/2015
+            %td EE.UU
+            %td 1.75M
+            %td 2.5M
+          %tr
+            %td 5/ene/2015
+            %td Canadá
+            %td 753.000
+            %td 0.5M
+          %tr
+            %td 5/jun/2015
+            %td Asia
+            %td 1.75M
+            %td 1.5M
+          %tr
+            %td 27/mar/2015
+            %td LATAM
+            %td 1.05M
+            %td 0.75M
