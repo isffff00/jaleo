@@ -1,0 +1,46 @@
+!!! 5
+%html{ :lang => "es"}
+  %head
+    %meta{ :charset => "utf-8" }
+    %title Los Vengadores: La Era de Ultrón – Jaleo
+    %meta{ :name=>"description", :content=>"Jaleo – Videoclub de Streaming Online"}
+    %meta{ :name=>"author", :content=>"Ramsés Cabello"}
+
+    /= favicons
+    %link{ :rel=>"icon", :href=>"img/favicon.ico", :type=>"image/x-icon" }
+    %link{ :rel=>"apple-touch-icon", :href=>"touch-icon-iphone.png"}
+    %link{ :rel=>"apple-touch-icon", :sizes=>"76x76", :href=>"touch-icon-ipad.png"}
+    %link{ :rel=>"apple-touch-icon", :sizes=>"120x120", :href=>"touch-icon-iphone-retina.png"}
+    %link{ :rel=>"apple-touch-icon", :sizes=>"152x152", :href=>"touch-icon-ipad-retina.png"}
+
+  %body
+    /= header
+    %header
+      /= logo
+      %a{:href=>"#"}
+        %h2 Jaleo
+
+      /= nav
+      %ul
+        %li
+          %a{:href=>"#"} Películas
+        %li
+          %a{:href=>"#"} Series
+        %li
+          %a{:href=>"#"} Explora
+        %li
+          %a{:href=>"#"} Iniciar Sesión
+
+    /= section: hero header
+    %section
+      %h1 Los Vengadores: La Era de Ultrón
+
+      /= movie details
+      %aside
+        %time{:datetime=>"2015"} 2015
+        %span{:itemprop=>"rating"}+18
+        %span{:itemprop=>"quality"}
+          %abbr{:title => "High Definition"}HD
+        %time{:datetime=>"PT1H30M"}1h 30min
+        %span{:itemprop=>"score"}4 de 5 estrellas
+        %a{:href=>'#'} Compartir
