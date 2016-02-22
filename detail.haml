@@ -31,115 +31,159 @@
         %li
           %a{:href=>"#"} Iniciar Sesión
 
-      %main
-        /= section: hero header
-        %section
-          /= movie details
-          %aside
-            %h1 Los Vengadores: La Era de Ultrón
-            %time{:datetime=>"2015"} 2015
-            %span{:itemprop=>"rating"}+18
-            %span{:itemprop=>"quality"}
-              %abbr{:title => "High Definition"}HD
-            %time{:datetime=>"PT1H30M"}1h 30min
-            %span{:itemprop=>"score"}4 de 5 estrellas
-            %a{:href=>'#'} Compartir
+    %main
+      /= section: hero header
+      %section
+        /= movie details
+        %aside
+          %h1 Los Vengadores: La Era de Ultrón
+          %time{:datetime=>"2015"} 2015
+          %span{:itemprop=>"rating"}+18
+          %span{:itemprop=>"quality"}
+            %abbr{:title => "High Definition"}HD
+          %time{:datetime=>"PT1H30M"}1h 30min
+          %span{:itemprop=>"score"}4 de 5 estrellas
+          %a{:href=>'#'} Compartir
 
-          %li
-            %ul
-              %a{:href=>'#'} &#9829; Guardar para después
-              %a{:href=>'#'} Ver ahora <strong>2,95€</strong>
-
-
-          %a{:href=>'#'} Ver trailer
-
-      /= section: awards
-      %h3 Premios y nominaciones
-      %ul
-        %li 2 nominaciones Globos de Oro
-        %li 1 nominación Oscar (guión)
+        %li
+          %ul
+            %a{:href=>'#'} &#9829; Guardar para después
+            %a{:href=>'#'} Ver ahora <strong>2,95€</strong>
 
 
-      /= section: excerpt
-      %h3 Sinopsis
-      %article
-        %blockquote
-          %p
-            El destino del planeta pende de un hilo cuando Tony Stark intenta hacer funcionar un inactivo programa para mantener la paz. Las cosas le salen mal y los héroes más poderosos, incluyendo Iron Man (Robert Downey Jr.), Capitán América (Chris Evans), la Viuda Negra (Scarlett Johansson), Thor (Chris Hemsworth), el Increíble Hulk (Mark Ruffalo) y Ojo de Halcón (Jeremy Renner), se ven enfrentados a la prueba definitiva.
-          %p
-            Los Vengadores: la era de Ultrón es la segunda película de la saga protagonizada por los héroes más poderosos del mundo. El reparto cuenta con Robert Downey Jr. (Iron Man), Chris Evans (Capitán América), Scarlett Johansson (Viuda Negra), Chris Hemsworth (Thor),
-        %a{:href=>'#'} Ver más
+        %a{:href=>'#'} Ver trailer
+
+    /= section: awards
+    %h3 Premios y nominaciones
+    %ul
+      %li 2 nominaciones Globos de Oro
+      %li 1 nominación Oscar (guión)
+
+
+    /= section: excerpt
+    %h3 Sinopsis
+    %article
+      %blockquote
+        %p
+          El destino del planeta pende de un hilo cuando Tony Stark intenta hacer funcionar un inactivo programa para mantener la paz. Las cosas le salen mal y los héroes más poderosos, incluyendo Iron Man (Robert Downey Jr.), Capitán América (Chris Evans), la Viuda Negra (Scarlett Johansson), Thor (Chris Hemsworth), el Increíble Hulk (Mark Ruffalo) y Ojo de Halcón (Jeremy Renner), se ven enfrentados a la prueba definitiva.
+        %p
+          Los Vengadores: la era de Ultrón es la segunda película de la saga protagonizada por los héroes más poderosos del mundo. El reparto cuenta con Robert Downey Jr. (Iron Man), Chris Evans (Capitán América), Scarlett Johansson (Viuda Negra), Chris Hemsworth (Thor),
+      %a{:href=>'#'} Ver más
+      %footer
+        %a{:href=>"#"} Tag 1
+        |
+        %a{:href=>"#"} Tag 2
+        |
+        %a{:href=>"#"} Tag 3
+        |
+        %a{:href=>"#"} Tag 4
+
+    /= section: technical details
+    %h3
+      %dl
+        %dt Director
+        %dd Jos Whedon
+        %dt Productora
+        %dd Marvel Studios
+        %dt Género
+        %dd Acción y aventura
+        %dt Duración
+        %dd 1h 34 min
+        %dt Formato
+        %dd HD Panorámico
+        %dt Calificación
+        %dd +18
+        %dt Idiomas
+        %dd
+          %ul
+            %li Español
+            %li Inglés
+            %li Francés
+            %li Alemán
+            %li
+              %a{:href=>"#"} Más
+        %dt Subtítulos
+        %dd
+          %ul
+            %li Español
+            %li Inglés
+            %li Francés
+            %li Alemán
+
+      /= section: earnings
+      %h3 Recaudación
+      %table
+        %tr
+          %th Estreno
+          %th Zona
+          %th Importa ($)
+          %th Espectadores
+        %tr
+          %td 21/abr/2015
+          %td Europa
+          %td 1.75M
+          %td 2.5M
+        %tr
+          %td 5/ene/2015
+          %td EE.UU
+          %td 1.75M
+          %td 2.5M
+        %tr
+          %td 5/ene/2015
+          %td Canadá
+          %td 753.000
+          %td 0.5M
+        %tr
+          %td 5/jun/2015
+          %td Asia
+          %td 1.75M
+          %td 1.5M
+        %tr
+          %td 27/mar/2015
+          %td LATAM
+          %td 1.05M
+          %td 0.75M
         %footer
-          %a{:href=>"#"} Tag 1
-          |
-          %a{:href=>"#"} Tag 2
-          |
-          %a{:href=>"#"} Tag 3
-          |
-          %a{:href=>"#"} Tag 4
+          Fuentes:
+          %a{:href=>'#'} lorem ipsum, dolor sit amet (->)
 
-      /= section: technical details
+      /= section: cast
       %h3
-        %dl
-          %dt Director
-          %dd Jos Whedon
-          %dt Productora
-          %dd Marvel Studios
-          %dt Género
-          %dd Acción y aventura
-          %dt Duración
-          %dd 1h 34 min
-          %dt Formato
-          %dd HD Panorámico
-          %dt Calificación
-          %dd +18
-          %dt Idiomas
-          %dd
-            %ul
-              %li Español
-              %li Inglés
-              %li Francés
-              %li Alemán
-              %li
-                %a{:href=>"#"} Más
-          %dt Subtítulos
-          %dd
-            %ul
-              %li Español
-              %li Inglés
-              %li Francés
-              %li Alemán
-
-        /= section: recaudación
-        %h3 Recaudación
-        %table
-          %tr
-            %th Estreno
-            %th Zona
-            %th Importa ($)
-            %th Espectadores
-          %tr
-            %td 21/abr/2015
-            %td Europa
-            %td 1.75M
-            %td 2.5M
-          %tr
-            %td 5/ene/2015
-            %td EE.UU
-            %td 1.75M
-            %td 2.5M
-          %tr
-            %td 5/ene/2015
-            %td Canadá
-            %td 753.000
-            %td 0.5M
-          %tr
-            %td 5/jun/2015
-            %td Asia
-            %td 1.75M
-            %td 1.5M
-          %tr
-            %td 27/mar/2015
-            %td LATAM
-            %td 1.05M
-            %td 0.75M
+        %ul
+          %li
+            %img{:src=>'images/cast/joss-whedon.jpg'}
+            %dl
+              %dt
+                %span{:itemprop=>"name"} Joss Whedon
+              %dd
+                DIRECTOR
+          %li
+            %img{:src=>'images/cast/robert-downey-jr.jpg'}
+            %dl
+              %dt
+                %span{:itemprop=>"name"} Robert Downey Jr.
+              %dd
+                ACTOR
+          %li
+            %img{:src=>'images/cast/chris-evans.jpg'}
+            %dl
+              %dt
+                %span{:itemprop=>"name"} Chris Evans
+              %dd
+                ACTOR
+          %li
+            %img{:src=>'images/cast/scarlett-johansson.jpg'}
+            %dl
+              %dt
+                %span{:itemprop=>"name"} Scarlett Johansson
+              %dd
+                ACTOR
+          %li
+            %img{:src=>'images/cast/chris-hemsworth.jpg'}
+            %dl
+              %dt
+                %span{:itemprop=>"name"} Chris Hemsworth
+              %dd
+                ACTOR
+          %li
+            %a{:href=>''} Ver más
