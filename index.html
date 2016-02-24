@@ -16,122 +16,143 @@
     </head>
 
     <body>
+      <!-- skip to content for screen readers -->
+      <a href="#main">skip to content</a>
 
-      <!-- header -->
+      <!-- header › <div role='header'> -->
       <header>
-        <!-- logo -->
-        <a href="#"><h2>Jaleo</h2></a>
-        <!-- /logo -->
 
-        <!-- main navigation -->
+        <!-- main navigation & logo -->
         <nav>
           <ul>
+            <!-- for SEO reasons logo can have an H tag -->
+            <li><a href="#">Jaleo</a></li>
             <li><a href="#">Películas</a></li>
             <li><a href="#">Series</a></li>
             <li><a href="#">Explora</a></li>
             <li><a href="">Iniciar Sesión</a></li>
           </ul>
         </nav>
-        <!-- / main navigation -->
+        <!-- / main navigation & logo -->
 
       </header>
       <!-- / header -->
 
-      <main>
-        <!-- section: hero -->
-        <section>
+      <!-- section: hero -->
+      <section class="hero">
 
-          <h1>Los Vengadores: La Era de Ultrón</h1>
+        <h1>Los Vengadores: La Era de Ultrón</h1>
 
-          <!-- movie details -->
-          <aside itemscope>
-            <time datetime="2015">2015</time>
-            <span itemprop="rating">+18</span>
-            <span itemprop="quality">HD</span>
-            <time datetime="PT1H30M">1h 30min</time>
-            <span itemprop="score">4 de 5 estrellas</span>
-          </aside>
+        <!-- movie details -->
+        <ul>
+          <li><time datetime="2015">2015</time></li>
+          <li><span itemprop="rating"><abbr title="Para mayores de">+</abbr>18</span></li>
+          <li><span itemprop="quality"><abbr title="High Definition" lang='en'>HD</abbr></span></li>
+          <!-- PT only for durations - H for hours - M for minutes -->
+          <li><time datetime="PT1H30M">1<abbr title="horas">h</abbr> 30<abbr title="minutos">min</abbr></time></li>
+          <li><span itemprop="score">4 de 5 estrellas</span></li>
+        </ul>
+        <!-- / movie details -->
 
-          <!-- hero controls -->
-            <ul>
-              <li><a href="">anterior</a></li>
-              <li><a href="">siguiente</a></li>
-            </ul>
-          <!-- / hero controls -->
+        <!-- movie - call to action -->
+        <ul>
+          <li><a href="">Más info</a></li>
+          <li><a href="">Ver Ahora 2,95&euro;</a></li>
+        </ul>
+        <!-- / movie - call to action -->
 
-          <!-- / movie details -->
+        <!-- hero controls -->
+          <ul>
+            <li><a href="">anterior</a></li>
+            <li><a href="">siguiente</a></li>
+          </ul>
+        <!-- / hero controls -->
 
-          <!-- movie call to action -->
-          <a href="">Más info</a>
-          <a href="">Ver Ahora 2,95€</a>
-          <!-- / movie call to action -->
+      </section>
+      <!-- / section: hero -->
 
-        </section>
-        <!-- / section: hero -->
-
+      <!-- main / add role value for compatibility reasons-->
+      <div id="main" role="main">
         <!-- section: catalogue -->
-        <section>
-
+        <section class="catalogue">
+            <!-- add more value on not visible H sections -->
+            <h2>Catálogo de películas de Jaleo</h2>
             <!-- catalogue filter -->
-              <form>
-                  <fieldset name="filter" id="filter">
+            <form action="submit">
+              <fieldset name="filter" id="filter">
+                <legend>Filtrar por</legend>
 
-                    <select name="movie-type">
-                      <option>Tipo</option>
-                    </select>
+                <label for="movie-type">Tipo</label>
+                <select name="movie-type" id="movie-type">
+                  <option>Tipo</option>
+                </select>
 
-                    <select name="movie-genre">
-                      <option>Género</option>
-                    </select>
+                <label for="movie-genre">Género</label>
+                <select name="movie-genre" id="movie-genre">
+                  <option>Género</option>
+                </select>
 
-                    <label for="new-releases">
-                      <input type="checkbox" name="new-releases" id="new-releases"> Solo novedades
-                    </label>
-                  </fieldset>
-              </form>
+                <label for="new-releases">
+                  <input type="checkbox" name="new-releases" id="new-releases"> Solo novedades
+                </label>
+              </fieldset>
             <!-- / catalogue filter -->
 
             <!-- catalogue sort-by -->
+              <fieldset>
+                <label for="catalogue-sort">Ordenar por</label>
+                <select name="catalogue-sort" id="catalogue-sort">
+                  <option>Más populares</option>
+                </select>
+              </fieldset>
 
-            <form>
-              <label for="catalogue-sort">Ordenar por</label>
-              <select name="catalogue-sort" id="catalogue-sort">
-                <option>Más populares</option>
-              </select>
+            <!-- catalogue submit -->
+              <fieldset>
+                <input type="submit" value="Actualizar lista" />
+              </fieldset>
             </form>
 
+            <!-- catalogue list -->
             <ul>
               <li>
-               <a href="#"><img src="images/posters/127-dias.jpg" alt="Póster 127 Horas"></a>
-               <a href="#"><h3>127 Días</h3></a>
-               <p>Lorem ipsum dolor sit amet consectetur... <a href="#">Más</a></p>
-               <span itemprop="score">****</span>
-               <a href="">2,95€</a>
+               <a href="#">
+                 <img src="images/posters/127-dias.jpg" alt="Póster 127 Horas">
+                 <h3>127 Días</h3>
+                 <time datatime="2010">2010</time>
+               </a>
+               <ul>
+                 <li>Lorem ipsum dolor sit amet consectetur... <a href="#">Más</a></li>
+                 <li><span itemprop="score">4 de 5 estrellas</span></li>
+                 <li><a href=""><strong>2,95&euro;</strong></a></li>
+               </ul>
               </li>
             </ul>
 
-            Tenemos 456 referencias
-            <a href="">Ver más</a>
+            <hr>
+            <div>
+              <p>Tenemos 456 referencias</p>
+              <a href="">Ver más</a>
+            <div>
 
-            <!-- / catalogue sort-by -->
-            </section>
-        <!-- / section: catalogue -->
+          </section>
+        <!-- / section: movie catalogue -->
 
         <!-- section: publishers -->
         <section>
+          <h2>Distribuidoras de películas en Jaleo</h2>
           <ul>
             <li><a href="">Dreamworks</a></li>
             <li><a href="">Filmax</a></li>
             <li><a href="">Miramax</a></li>
             <li><a href="">Universal</a></li>
+            <li><a href="#">Otras distribuidoras</a></li>
           </ul>
-          <a href="#">Otras distribuidoras</a>
         </section>
         <!-- / section: publishers -->
 
         <!-- section: steps -->
         <section>
-
+        <h2>Paso a paso – Cómo utilizar Jaleo</h2>
           <ol>
             <li>
               <dl>
@@ -155,13 +176,13 @@
 
         </section>
         <!-- / section: steps -->
-      </main>
+      </div>
+      <!-- / main -->
 
       <!-- main footer -->
       <footer>
-
           <!-- page links -->
-            <h4>Página</h4>
+            <h2>Página</h2>
             <ul>
               <li><a href="">Blog</a></li>
               <li><a href="">Prensa</a></li>
@@ -171,17 +192,17 @@
             </ul>
 
           <!-- corporate links -->
-            <h4>Corporativo</h4>
+            <h2>Corporativo</h2>
             <ul>
               <li><a href="">Nosotros</a></li>
               <li><a href="">Contacto</a></li>
-              <li><a href="#" lang="en">English Site</a></li>
-              <li><a href="#" lang="de">Deutsch Website</a></li>
-              <li><a href="#" lang="fr">Site français</a></li>
+              <li><a href="#" hreflang="en">English Site</a></li>
+              <li><a href="#" hreflang="de">Deutsch Website</a></li>
+              <li><a href="#" hreflang="fr">Site français</a></li>
             </ul>
 
             <!-- social links -->
-              <h4>Síguenos</h4>
+              <h2>Síguenos</h2>
               <ul>
                 <li><a href="#">Facebook</a></li>
                 <li><a href="#">Twitter</a></li>
@@ -189,7 +210,7 @@
               </ul>
 
             <!-- about -->
-              <h4>Síguenos</h4>
+              <h2>Dirección</h2>
               <small rel="license">&copy;  Jaleo de España S.A.</small>
               <div class="vcard">
                 <p class="fn"><a class="url" href="#">Jaleo</a><p>

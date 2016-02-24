@@ -21,15 +21,16 @@
         %h2 Jaleo
 
       /= nav
-      %ul
-        %li
-          %a{:href=>"#"} Películas
-        %li
-          %a{:href=>"#"} Series
-        %li
-          %a{:href=>"#"} Explora
-        %li
-          %a{:href=>"#"} Iniciar Sesión
+      %nav
+        %ul
+          %li
+            %a{:href=>"#"} Películas
+          %li
+            %a{:href=>"#"} Series
+          %li
+            %a{:href=>"#"} Explora
+          %li
+            %a{:href=>"#"} Iniciar Sesión
 
     %main
       /= section: hero header
@@ -143,7 +144,7 @@
           %td LATAM
           %td 1.05M
           %td 0.75M
-        %footer
+        %tfoot
           Fuentes:
           %a{:href=>'#'} lorem ipsum, dolor sit amet (->)
 
@@ -152,11 +153,8 @@
       %ul
         %li
           %img{:src=>'images/cast/joss-whedon.jpg'}
-          %dl
-            %dt
-              %span{:itemprop=>"name"} Joss Whedon
-            %dd
-              DIRECTOR
+          %h4{:itempro=>"name"} Josh Whedon
+          %span DIRECTOR
         %li
           %img{:src=>'images/cast/robert-downey-jr.jpg'}
           %dl
