@@ -35,21 +35,164 @@
         </li>
       </ul>
     </header>
-    <!-- = disclaimer and login -->
-    <h1>Regístrate para empezar a ver Los Vengadores: La Era de Ultrón</h1>
-    <p>Una vez comiences a ver la película, dispones de 72h. para verla cuantas veces, y tantos los dispositivos como quieras.</p>
-    <p>
-      ¿Ya estás registrado?
-      <strong>
-        <a href='#'>Inicia tu sesión</a>
-      </strong>
-      ahora
-    </p>
-    <!-- = personal data -->
     <hr>
-    <h3>Datos personales</h3>
-    <form>
-      <label for='name'>Nombre completoº</label>
-    </form>
+    <!-- = disclaimer and login -->
+    <section class='main' id='main'>
+      <h1>Regístrate para empezar a ver Los Vengadores: La Era de Ultrón</h1>
+      <p>Una vez comiences a ver la película, dispones de 72h. para verla cuantas veces, y tantos los dispositivos como quieras.</p>
+      <p>
+        ¿Ya estás registrado?
+        <strong>
+          <a href='#'>Inicia tu sesión</a>
+        </strong>
+        ahora.
+      </p>
+      <!-- = personal data -->
+      <hr>
+      <form>
+        <fieldset>
+          <legend>Datos personales</legend>
+          <label for='name'>Nombre completo</label>
+          <input id='name' name='name' type='text'>
+          <label for='email'>Correo Electrónico</label>
+          <input id='email' name='email' type='email'>
+          <label for='password'>Contraseña</label>
+          <input id='password' name='password' type='password'>
+        </fieldset>
+        <fieldset>
+          <legend>Datos de pago</legend>
+          <span>
+            <strong>2,95€</strong>
+          </span>
+          <label for='payment-method'>Método de pago</label>
+          <input name='payment-method' type='radio' value='Pay-pal'>Paypal</input>
+          <input name='payment-method' type='radio' value='Credit-Card'>Tarjeta de Crédito</input>
+          <div class='credit-card'>
+            <label for='card-type'>Tipo de tarjeta</label>
+            <input name='card-type' type='radio' value='Pay-pal'>Visa</input>
+            <input name='card-type' type='radio' value='Pay-pal'>MasterCard</input>
+            <input name='card-type' type='radio' value='Pay-pal'>American Express</input>
+            <input name='card-type' type='radio' value='Pay-pal'>Discovery Network</input>
+            <label for='card-number'>Número de tarjeta</label>
+            <input id='card-number' name='card-number' pattern='[0-9]{13,16}' type='text'>
+            <label for='expdate'>Caducidad</label>
+            <select name='expdate-month'>
+              <option>Mes</option>
+              <option>Enero</option>
+              <option>Febrero</option>
+              <option>Marzo</option>
+              <option>Abril</option>
+              <option>Mayo</option>
+              <option>Junio</option>
+              <option>Julio</option>
+              <option>Agosto</option>
+              <option>Septiembre</option>
+              <option>Octubre</option>
+              <option>Noviembre</option>
+              <option>Diciembre</option>
+            </select>
+            <select name='expdate-year'>
+              <option>Año</option>
+              <option>2016</option>
+              <option>2017</option>
+              <option>2018</option>
+              <option>2019</option>
+              <option>2020</option>
+            </select>
+            <label for='promotional-information'>
+              <input id='promotional-information' name='promotional-information' type='checkbox'>
+              Recibir correos electrónicos ocasionales con noticias y novedades de Jaleo.
+            </label>
+          </div>
+          <fieldset>
+            <input type='submir' value='Regístrate'>
+          </fieldset>
+        </fieldset>
+        <p>
+          Al registrarte estás de acuerdo con nuestros
+          <a href='#'>términos de uso</a>
+          y
+          <a href='#'>política de privacidad</a>
+        </p>
+        <p>
+          ¿Necesitas ayuda?
+          <a href='#'>Contacta con nosotros.</a>
+        </p>
+      </form>
+    </section>
+    <!-- main footer -->
+    <footer>
+      <!-- page links -->
+      <h2>Página</h2>
+      <ul>
+        <li>
+          <a href=''>Blog</a>
+        </li>
+        <li>
+          <a href=''>Prensa</a>
+        </li>
+        <li>
+          <a href=''>Condiciones de Uso</a>
+        </li>
+        <li>
+          <a href=''>Privacidad</a>
+        </li>
+        <li>
+          <a href=''>Soporte</a>
+        </li>
+      </ul>
+      <!-- corporate links -->
+      <h2>Corporativo</h2>
+      <ul>
+        <li>
+          <a href=''>Nosotros</a>
+        </li>
+        <li>
+          <a href=''>Contacto</a>
+        </li>
+        <li>
+          <a href='#' hreflang='en'>English Site</a>
+        </li>
+        <li>
+          <a href='#' hreflang='de'>Deutsch Website</a>
+        </li>
+        <li>
+          <a href='#' hreflang='fr'>Site français</a>
+        </li>
+      </ul>
+      <!-- social links -->
+      <h2>Síguenos</h2>
+      <ul>
+        <li>
+          <a href='#'>Facebook</a>
+        </li>
+        <li>
+          <a href='#'>Twitter</a>
+        </li>
+        <li>
+          <a href='#'>Pinterest</a>
+        </li>
+      </ul>
+      <!-- about -->
+      <h2>Dirección</h2>
+      <small rel='license'>©  Jaleo de España S.A.</small>
+      <div class='vcard'>
+        <p class='fn'>
+          <a class='url' href='#'>Jaleo</a>
+        </p>
+        <p></p>
+        <p class='adr'>
+          <span class='street-address'>Calle del Rey, 23</span>
+          <br>
+          <span class='postal-code'>28080</span>
+          <span class='region'>MADRID</span>
+          <br>
+          <span class='country-name' style='display:none'>España</span>
+        </p>
+        <p class='tel'>0034 555 55 65 85</p>
+        <a href='mailto:info@jaleoapp.es'>info@jaleoapp.es</a>
+      </div>
+    </footer>
+    <!-- / main footer -->
   </body>
 </html>

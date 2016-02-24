@@ -14,15 +14,17 @@
     %link{ :rel=>"apple-touch-icon", :sizes=>"152x152", :href=>"touch-icon-ipad-retina.png"}
 
   %body
+    / skip to content for screen readers
+    %a{:href=>"#main"} skip to content
+
     /= header
     %header
-      /= logo
-      %a{:href=>"#"}
-        %h2 Jaleo
 
       /= nav
       %nav
         %ul
+          %li
+            %a{:href=>"#"} Jaleo
           %li
             %a{:href=>"#"} Películas
           %li
@@ -233,3 +235,58 @@
             %a{:href=>'#'} Más
           %span{:itempro=>'score'} 4 de 5 estrellas
           %a{:href=>'#'} <strong>2,95€</strong>
+
+      / main footer
+      %footer
+        / page links
+        %h2 Página
+        %ul
+          %li
+            %a{:href => ""} Blog
+          %li
+            %a{:href => ""} Prensa
+          %li
+            %a{:href => ""} Condiciones de Uso
+          %li
+            %a{:href => ""} Privacidad
+          %li
+            %a{:href => ""} Soporte
+        / corporate links
+        %h2 Corporativo
+        %ul
+          %li
+            %a{:href => ""} Nosotros
+          %li
+            %a{:href => ""} Contacto
+          %li
+            %a{:href => "#", :hreflang => "en"} English Site
+          %li
+            %a{:href => "#", :hreflang => "de"} Deutsch Website
+          %li
+            %a{:href => "#", :hreflang => "fr"} Site français
+        / social links
+        %h2 Síguenos
+        %ul
+          %li
+            %a{:href => "#"} Facebook
+          %li
+            %a{:href => "#"} Twitter
+          %li
+            %a{:href => "#"} Pinterest
+        / about
+        %h2 Dirección
+        %small{:rel => "license"} ©  Jaleo de España S.A.
+        .vcard
+          %p.fn
+            %a.url{:href => "#"} Jaleo
+          %p
+          %p.adr
+            %span.street-address Calle del Rey, 23
+            %br/
+            %span.postal-code 28080
+            %span.region MADRID
+            %br/
+            %span.country-name{:style => "display:none"} España
+          %p.tel 0034 555 55 65 85
+          %a{:href => "mailto:info@jaleoapp.es"} info@jaleoapp.es
+      / / main footer
