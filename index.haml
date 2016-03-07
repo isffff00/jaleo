@@ -47,12 +47,154 @@
         %li
           %span(itemprop="quality") <abbr title="High Definition" lang='en'>HD</abbr>
         %li
+          %time(datetime="PT1H30M") 1<abbr title="horas">h</abbr> 30<abbr title="minutos">min</abbr>
         %li
+          %span(itemprop="score") 4 de 5 estrellas
+
+      / movie - call to action
+      %ul
         %li
+          %a(href="#") anterior
         %li
+          %a(href="#") siguiente
 
-
-
+    / main
     #main(role="main")
+      /catalogue
+      %section.catalogue
+        %h2 Catálogo de películas de Jaleo
 
+        / catalogue filter
+        %form(action="submit")
+          %fieldset#filter(name="filter")
+            %legend Filtrar por
+
+            %label(for="movie-type") Tipo
+            %select#movie-type(name="movie-type")
+              %option Tipo
+
+            %label(for="movie-genre") Género
+            %select#movie-genre(name="movie-genre")
+              %option Género
+
+            %label(for="new-releases")
+              %input#new-releases(type="checkbox" name="new-releases") Sólo novedades
+
+          /catalogue sort-by
+          %fieldset
+          %label(for="catalogue-sort") Ordenar por
+          %select#catalogue-sort(name="catalogue-sort")
+            %option Más populares
+
+          /catalogue submit
+          %fieldset
+            %input(type="submit" value="Actualizar lista")
+
+        %ul
+          %li
+            %a(href="#")
+              %img(src="images/posters/127-dias.jpg" alt="Póster 127 Horas")
+              %h3 127 Días
+              %time(datetime="2010")
+
+            %ul
+              %li
+                Lorem ipsum dolor sit amet, consectetur...
+                %a(href="#") Más
+              %li
+                %span(itemprop="score")4 de 5 estrellas.
+              %li
+                %a(href="#")
+                  %strong 2,95&euro;
+
+        %hr
+        .pagination
+          %p Tenemos 456 referencias
+          %a(href="#") Ver más
+
+      /publishers
+      %section
+        %h2 Distribuidoras de películas en Jaleo
+        %ul
+          %li
+            %a(href="#") Dreamworks
+          %li
+            %a(href="#") Filmax
+          %li
+            %a(href="#") Miramax
+          %li
+            %a(href="#") Universal
+          %li
+            %a(href="#") Otras distribuidoras
+
+      /steps
+      %section
+      %h2 Paso a paso - Cómo utilizar jaleo
+      %ol
+        %li
+          %dl
+            %dt Elige tu película
+            %dd Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        %li
+          %dl
+            %dt Cómprala con un click
+            %dd Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        %li
+          %dl
+            %dt Disfrútala donde quieras
+            %dd Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+    /main footer
     %footer
+
+      /page links
+      %h2 Página
+      %ul
+        %li
+          %a(href="#") Blog
+        %li
+          %a(href="#") Prensa
+        %li
+          %a(href="#") Condiciones de Uso
+        %li
+          %a(href="#") Privacidad
+        %li
+          %a(href="#") Soporte
+
+      /corporate links
+      %h2 Corporate
+      %ul
+        %li
+          %a(href="#") Nosotros
+        %li
+          %a(href="#") Contacto
+        %li
+          %a(href="#" hreflang="en") English Site
+        %li
+          %a(href="#" hreflang="de") Deutsch Website
+        %li
+          %a(href="#" hreflang="fr") Site Français
+
+      /social links
+      %h2 Síguenos
+      %li
+        %a(href="#") Facebook
+      %li
+        %a(href="#") Facebook
+      %li
+        %a(href="#") Facebook
+
+      /about
+      %h2 Dirección
+      %small(rel="license") &copy;  Jaleo de España S.A.
+      .vcard
+        %p.fn
+          %a.url(href="#") Jaleo
+        %p.adr
+          %span.street-address Calle del Rey, 23
+          %br
+          %span.postal-code 28080
+          %span.region MADRID
+          %span.country-name España
+        %p.tel 0034 555 55 65 85
+        %a(href="mailto:info@jaleoapp.es") info&#x40;jaleoapp.es
