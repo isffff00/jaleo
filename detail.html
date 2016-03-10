@@ -42,10 +42,10 @@
       <!-- = section hero header -->
       <section>
         <!-- = movie details -->
-        <aside>
+        <aside itemscope itemtype='http://schema.org/Movie'>
           <h1>Los Vengadores La Era de Ultrón</h1>
           <time datetime='2015'>2015</time>
-          <span itemprop='rating'>+18</span>
+          <span itemprop='contentRating'>+18</span>
           <span itemprop='quality'>
             <abbr title='High Definition'>HD</abbr>
           </span>
@@ -176,12 +176,12 @@
     <!-- = section cast -->
     <h3>Reparto y equipo</h3>
     <ul>
-      <li>
+      <li itemscope itemtype='http://schema.org/Persona'>
         <img alt='Fotografía de perfil de Joss Whedon' src='images/cast/joss-whedon.jpg'>
-        <h4 itempro='name'>Josh Whedon</h4>
+        <h4 itemprop='name'>Josh Whedon</h4>
         <span>DIRECTOR</span>
       </li>
-      <li>
+      <li itemscope itemtype='http://schema.org/Persona'>
         <img alt='Fotografía de perfil de Robert Downey Jr.' src='images/cast/robert-downey-jr.jpg'>
         <dl>
           <dt>
@@ -192,7 +192,7 @@
           </dd>
         </dl>
       </li>
-      <li>
+      <li itemscope itemtype='http://schema.org/Persona'>
         <img alt='Fotografía de perfil de Chris Evans' src='images/cast/chris-evans.jpg'>
         <dl>
           <dt>
@@ -203,7 +203,7 @@
           </dd>
         </dl>
       </li>
-      <li>
+      <li itemscope itemtype='http://schema.org/Persona'>
         <img alt='Fotografía de perfil de Scarlett Johansson' src='images/cast/scarlett-johansson.jpg'>
         <dl>
           <dt>
@@ -214,7 +214,7 @@
           </dd>
         </dl>
       </li>
-      <li>
+      <li itemscope itemtype='http://schema.org/Persona'>
         <img alt='Fotografía de perfil de Chris Hemsworth' src='images/cast/chris-hemsworth.jpg'>
         <dl>
           <dt>
@@ -225,28 +225,28 @@
           </dd>
         </dl>
       </li>
-      <li>
+      <li itemscope itemtype='http://schema.org/Persona'>
         <a href=''>Ver más</a>
       </li>
     </ul>
     <!-- = section recommended -->
     <h3>También te puede interesar</h3>
     <ul>
-      <li>
+      <li itemscope itemtype='http://schema.org/Movie'>
         <a href='#'>
           <img alt='Póster 127 Horas' src='images/posters/127-dias.jpg'>
         </a>
         <a href='#'>
-          <h4>127 Días</h4>
+          <h4 itemprop='name'>127 Días</h4>
         </a>
         <p>
           Lorem ipsum dolor sit amet consectetur...
           <a href='#'>Más</a>
         </p>
-        <span itempro='score'>4 de 5 estrellas</span>
+        <span itemprop='score'>4 de 5 estrellas</span>
         <a href='#'><strong>2,95€</strong></a>
       </li>
-      <li>
+      <li itemscope itemtype='http://schema.org/Movie'>
         <a href='#'>
           <img alt='Póster 127 Horas' src='images/posters/127-dias.jpg'>
         </a>
@@ -257,10 +257,10 @@
           Lorem ipsum dolor sit amet consectetur...
           <a href='#'>Más</a>
         </p>
-        <span itempro='score'>4 de 5 estrellas</span>
+        <span itemprop='score'>4 de 5 estrellas</span>
         <a href='#'><strong>2,95€</strong></a>
       </li>
-      <li>
+      <li itemscope itemtype='http://schema.org/Movie'>
         <a href='#'>
           <img alt='Póster 127 Horas' src='images/posters/127-dias.jpg'>
         </a>
@@ -271,10 +271,10 @@
           Lorem ipsum dolor sit amet consectetur...
           <a href='#'>Más</a>
         </p>
-        <span itempro='score'>4 de 5 estrellas</span>
+        <span itemprop='score'>4 de 5 estrellas</span>
         <a href='#'><strong>2,95€</strong></a>
       </li>
-      <li>
+      <li itemscope itemtype='http://schema.org/Movie'>
         <a href='#'>
           <img alt='Póster 127 Horas' src='images/posters/127-dias.jpg'>
         </a>
@@ -285,7 +285,7 @@
           Lorem ipsum dolor sit amet consectetur...
           <a href='#'>Más</a>
         </p>
-        <span itempro='score'>4 de 5 estrellas</span>
+        <span itemprop='score'>4 de 5 estrellas</span>
         <a href='#'><strong>2,95€</strong></a>
       </li>
     </ul>
@@ -344,7 +344,7 @@
       </ul>
       <!-- about -->
       <h2>Dirección</h2>
-      <small rel='license'>©  Jaleo de España S.A.</small>
+      <small rel='license'>&copy;  Jaleo de España S.A.</small>
       <div class='vcard'>
         <p class='fn'>
           <a class='url' href='#'>Jaleo</a>

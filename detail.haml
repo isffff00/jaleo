@@ -38,10 +38,10 @@
       /= section hero header
       %section
         /= movie details
-        %aside
+        %aside(itemscope itemtype="http://schema.org/Movie")
           %h1 Los Vengadores La Era de Ultrón
           %time(datetime="2015") 2015
-          %span(itemprop="rating")+18
+          %span(itemprop="contentRating")+18
           %span(itemprop="quality")
             %abbr(title = "High Definition")HD
           %time(datetime="PT1H30M")1h 30min
@@ -154,57 +154,57 @@
     /= section cast
     %h3 Reparto y equipo
     %ul
-      %li
+      %li(itemscope itemtype="http://schema.org/Persona")
         %img(src='images/cast/joss-whedon.jpg' alt="Fotografía de perfil de Joss Whedon")
-        %h4(itempro="name") Josh Whedon
+        %h4(itemprop="name") Josh Whedon
         %span DIRECTOR
-      %li
+      %li(itemscope itemtype="http://schema.org/Persona")
         %img(src='images/cast/robert-downey-jr.jpg' alt="Fotografía de perfil de Robert Downey Jr.")
         %dl
           %dt
             %span(itemprop="name") Robert Downey Jr.
           %dd
             ACTOR
-      %li
+      %li(itemscope itemtype="http://schema.org/Persona")
         %img(src='images/cast/chris-evans.jpg' alt="Fotografía de perfil de Chris Evans")
         %dl
           %dt
             %span(itemprop="name") Chris Evans
           %dd
             ACTOR
-      %li
+      %li(itemscope itemtype="http://schema.org/Persona")
         %img(src='images/cast/scarlett-johansson.jpg' alt="Fotografía de perfil de Scarlett Johansson")
         %dl
           %dt
             %span(itemprop="name") Scarlett Johansson
           %dd
             ACTRIZ
-      %li
+      %li(itemscope itemtype="http://schema.org/Persona")
         %img(src='images/cast/chris-hemsworth.jpg' alt="Fotografía de perfil de Chris Hemsworth")
         %dl
           %dt
             %span(itemprop="name") Chris Hemsworth
           %dd
             ACTOR
-      %li
+      %li(itemscope itemtype="http://schema.org/Persona")
         %a(href='') Ver más
 
 
     /= section recommended
     %h3 También te puede interesar
     %ul
-      %li
+      %li(itemscope itemtype="http://schema.org/Movie")
         %a(href='#')
           %img(src='images/posters/127-dias.jpg' alt='Póster 127 Horas')
         %a(href='#')
-          %h4 127 Días
+          %h4(itemprop="name") 127 Días
         %p
           Lorem ipsum dolor sit amet consectetur...
           %a(href='#') Más
-        %span(itempro='score') 4 de 5 estrellas
+        %span(itemprop='score') 4 de 5 estrellas
         %a(href='#') <strong>2,95€</strong>
 
-      %li
+      %li(itemscope itemtype="http://schema.org/Movie")
         %a(href='#')
           %img(src='images/posters/127-dias.jpg' alt='Póster 127 Horas')
         %a(href='#')
@@ -212,10 +212,10 @@
         %p
           Lorem ipsum dolor sit amet consectetur...
           %a(href='#') Más
-        %span(itempro='score') 4 de 5 estrellas
+        %span(itemprop='score') 4 de 5 estrellas
         %a(href='#') <strong>2,95€</strong>
 
-      %li
+      %li(itemscope itemtype="http://schema.org/Movie")
         %a(href='#')
           %img(src='images/posters/127-dias.jpg' alt='Póster 127 Horas')
         %a(href='#')
@@ -223,10 +223,10 @@
         %p
           Lorem ipsum dolor sit amet consectetur...
           %a(href='#') Más
-        %span(itempro='score') 4 de 5 estrellas
+        %span(itemprop='score') 4 de 5 estrellas
         %a(href='#') <strong>2,95€</strong>
 
-      %li
+      %li(itemscope itemtype="http://schema.org/Movie")
         %a(href='#')
           %img(src='images/posters/127-dias.jpg' alt='Póster 127 Horas')
         %a(href='#')
@@ -234,7 +234,7 @@
         %p
           Lorem ipsum dolor sit amet consectetur...
           %a(href='#') Más
-        %span(itempro='score') 4 de 5 estrellas
+        %span(itemprop='score') 4 de 5 estrellas
         %a(href='#') <strong>2,95€</strong>
 
     / main footer
@@ -276,7 +276,7 @@
           %a(href = "#") Pinterest
       / about
       %h2 Dirección
-      %small(rel = "license") ©  Jaleo de España S.A.
+      %small(rel = "license") &copy;  Jaleo de España S.A.
       .vcard
         %p.fn
           %a.url(href = "#") Jaleo
