@@ -2,14 +2,14 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "19115",
 "files": {
-	"\/detail.haml": {
+	"\/www\/detail.haml": {
 		"escapeHTMLCharacters": 0,
 		"fileType": 256,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/detail.haml",
+		"inputAbbreviatedPath": "\/www\/detail.haml",
 		"noEscapeInAttributes": 0,
-		"outputAbbreviatedPath": "\/detail.html",
+		"outputAbbreviatedPath": "\/www\/detail.html",
 		"outputFormat": 2,
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -18,397 +18,397 @@
 		"useDoubleQuotes": 0,
 		"useUnixNewlines": 0
 		},
-	"\/detail.html": {
+	"\/www\/detail.html": {
 		"fileType": 8192,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/detail.html",
+		"inputAbbreviatedPath": "\/www\/detail.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/images\/abc.png": {
+	"\/www\/images\/abc.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1336,
-		"inputAbbreviatedPath": "\/images\/abc.png",
-		"outputAbbreviatedPath": "\/images\/abc.png",
+		"initialSize": 639,
+		"inputAbbreviatedPath": "\/www\/images\/abc.png",
+		"outputAbbreviatedPath": "\/www\/images\/abc.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/cast\/chris-evans.jpg": {
+	"\/www\/images\/cast\/chris-evans.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 5632,
-		"inputAbbreviatedPath": "\/images\/cast\/chris-evans.jpg",
-		"outputAbbreviatedPath": "\/images\/cast\/chris-evans.jpg",
+		"initialSize": 5580,
+		"inputAbbreviatedPath": "\/www\/images\/cast\/chris-evans.jpg",
+		"outputAbbreviatedPath": "\/www\/images\/cast\/chris-evans.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/cast\/chris-hemsworth.jpg": {
+	"\/www\/images\/cast\/chris-hemsworth.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 5830,
-		"inputAbbreviatedPath": "\/images\/cast\/chris-hemsworth.jpg",
-		"outputAbbreviatedPath": "\/images\/cast\/chris-hemsworth.jpg",
+		"initialSize": 5781,
+		"inputAbbreviatedPath": "\/www\/images\/cast\/chris-hemsworth.jpg",
+		"outputAbbreviatedPath": "\/www\/images\/cast\/chris-hemsworth.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/cast\/joss-whedon.jpg": {
+	"\/www\/images\/cast\/joss-whedon.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 5998,
-		"inputAbbreviatedPath": "\/images\/cast\/joss-whedon.jpg",
-		"outputAbbreviatedPath": "\/images\/cast\/joss-whedon.jpg",
+		"initialSize": 5958,
+		"inputAbbreviatedPath": "\/www\/images\/cast\/joss-whedon.jpg",
+		"outputAbbreviatedPath": "\/www\/images\/cast\/joss-whedon.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/cast\/robert-downey-jr.jpg": {
+	"\/www\/images\/cast\/robert-downey-jr.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 5690,
-		"inputAbbreviatedPath": "\/images\/cast\/robert-downey-jr.jpg",
-		"outputAbbreviatedPath": "\/images\/cast\/robert-downey-jr.jpg",
+		"initialSize": 5646,
+		"inputAbbreviatedPath": "\/www\/images\/cast\/robert-downey-jr.jpg",
+		"outputAbbreviatedPath": "\/www\/images\/cast\/robert-downey-jr.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/cast\/scarlett-johansson.jpg": {
+	"\/www\/images\/cast\/scarlett-johansson.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 7373,
-		"inputAbbreviatedPath": "\/images\/cast\/scarlett-johansson.jpg",
-		"outputAbbreviatedPath": "\/images\/cast\/scarlett-johansson.jpg",
+		"initialSize": 7318,
+		"inputAbbreviatedPath": "\/www\/images\/cast\/scarlett-johansson.jpg",
+		"outputAbbreviatedPath": "\/www\/images\/cast\/scarlett-johansson.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/elpais.png": {
+	"\/www\/images\/elpais.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1288,
-		"inputAbbreviatedPath": "\/images\/elpais.png",
-		"outputAbbreviatedPath": "\/images\/elpais.png",
+		"initialSize": 1015,
+		"inputAbbreviatedPath": "\/www\/images\/elpais.png",
+		"outputAbbreviatedPath": "\/www\/images\/elpais.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/posters\/127-dias.jpg": {
+	"\/www\/images\/posters\/127-dias.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 13541,
-		"inputAbbreviatedPath": "\/images\/posters\/127-dias.jpg",
-		"outputAbbreviatedPath": "\/images\/posters\/127-dias.jpg",
+		"initialSize": 13335,
+		"inputAbbreviatedPath": "\/www\/images\/posters\/127-dias.jpg",
+		"outputAbbreviatedPath": "\/www\/images\/posters\/127-dias.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/posters\/amelie.jpg": {
+	"\/www\/images\/posters\/amelie.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 12164,
-		"inputAbbreviatedPath": "\/images\/posters\/amelie.jpg",
-		"outputAbbreviatedPath": "\/images\/posters\/amelie.jpg",
+		"initialSize": 11966,
+		"inputAbbreviatedPath": "\/www\/images\/posters\/amelie.jpg",
+		"outputAbbreviatedPath": "\/www\/images\/posters\/amelie.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/posters\/american-beauty.jpg": {
+	"\/www\/images\/posters\/american-beauty.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 6686,
-		"inputAbbreviatedPath": "\/images\/posters\/american-beauty.jpg",
-		"outputAbbreviatedPath": "\/images\/posters\/american-beauty.jpg",
+		"initialSize": 6637,
+		"inputAbbreviatedPath": "\/www\/images\/posters\/american-beauty.jpg",
+		"outputAbbreviatedPath": "\/www\/images\/posters\/american-beauty.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/posters\/apocalypse-now.jpg": {
+	"\/www\/images\/posters\/apocalypse-now.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 8540,
-		"inputAbbreviatedPath": "\/images\/posters\/apocalypse-now.jpg",
-		"outputAbbreviatedPath": "\/images\/posters\/apocalypse-now.jpg",
+		"initialSize": 8502,
+		"inputAbbreviatedPath": "\/www\/images\/posters\/apocalypse-now.jpg",
+		"outputAbbreviatedPath": "\/www\/images\/posters\/apocalypse-now.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/posters\/avatar.jpg": {
+	"\/www\/images\/posters\/avatar.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 11765,
-		"inputAbbreviatedPath": "\/images\/posters\/avatar.jpg",
-		"outputAbbreviatedPath": "\/images\/posters\/avatar.jpg",
+		"initialSize": 11593,
+		"inputAbbreviatedPath": "\/www\/images\/posters\/avatar.jpg",
+		"outputAbbreviatedPath": "\/www\/images\/posters\/avatar.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/posters\/batman.jpg": {
+	"\/www\/images\/posters\/batman.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 17596,
-		"inputAbbreviatedPath": "\/images\/posters\/batman.jpg",
-		"outputAbbreviatedPath": "\/images\/posters\/batman.jpg",
+		"initialSize": 17190,
+		"inputAbbreviatedPath": "\/www\/images\/posters\/batman.jpg",
+		"outputAbbreviatedPath": "\/www\/images\/posters\/batman.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/posters\/cisne-negro.jpg": {
+	"\/www\/images\/posters\/cisne-negro.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 8307,
-		"inputAbbreviatedPath": "\/images\/posters\/cisne-negro.jpg",
-		"outputAbbreviatedPath": "\/images\/posters\/cisne-negro.jpg",
+		"initialSize": 8252,
+		"inputAbbreviatedPath": "\/www\/images\/posters\/cisne-negro.jpg",
+		"outputAbbreviatedPath": "\/www\/images\/posters\/cisne-negro.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/posters\/dracula.jpg": {
+	"\/www\/images\/posters\/dracula.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 13656,
-		"inputAbbreviatedPath": "\/images\/posters\/dracula.jpg",
-		"outputAbbreviatedPath": "\/images\/posters\/dracula.jpg",
+		"initialSize": 13359,
+		"inputAbbreviatedPath": "\/www\/images\/posters\/dracula.jpg",
+		"outputAbbreviatedPath": "\/www\/images\/posters\/dracula.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/posters\/el-silencio-de-los-corderos.jpg": {
+	"\/www\/images\/posters\/el-silencio-de-los-corderos.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 8070,
-		"inputAbbreviatedPath": "\/images\/posters\/el-silencio-de-los-corderos.jpg",
-		"outputAbbreviatedPath": "\/images\/posters\/el-silencio-de-los-corderos.jpg",
+		"initialSize": 7989,
+		"inputAbbreviatedPath": "\/www\/images\/posters\/el-silencio-de-los-corderos.jpg",
+		"outputAbbreviatedPath": "\/www\/images\/posters\/el-silencio-de-los-corderos.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/posters\/et.jpg": {
+	"\/www\/images\/posters\/et.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 7883,
-		"inputAbbreviatedPath": "\/images\/posters\/et.jpg",
-		"outputAbbreviatedPath": "\/images\/posters\/et.jpg",
+		"initialSize": 7825,
+		"inputAbbreviatedPath": "\/www\/images\/posters\/et.jpg",
+		"outputAbbreviatedPath": "\/www\/images\/posters\/et.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/posters\/her.jpg": {
+	"\/www\/images\/posters\/her.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 9369,
-		"inputAbbreviatedPath": "\/images\/posters\/her.jpg",
-		"outputAbbreviatedPath": "\/images\/posters\/her.jpg",
+		"initialSize": 9312,
+		"inputAbbreviatedPath": "\/www\/images\/posters\/her.jpg",
+		"outputAbbreviatedPath": "\/www\/images\/posters\/her.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/posters\/malefica.jpg": {
+	"\/www\/images\/posters\/malefica.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 10040,
-		"inputAbbreviatedPath": "\/images\/posters\/malefica.jpg",
-		"outputAbbreviatedPath": "\/images\/posters\/malefica.jpg",
+		"initialSize": 9865,
+		"inputAbbreviatedPath": "\/www\/images\/posters\/malefica.jpg",
+		"outputAbbreviatedPath": "\/www\/images\/posters\/malefica.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/posters\/parque-jurasico.jpg": {
+	"\/www\/images\/posters\/parque-jurasico.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 9016,
-		"inputAbbreviatedPath": "\/images\/posters\/parque-jurasico.jpg",
-		"outputAbbreviatedPath": "\/images\/posters\/parque-jurasico.jpg",
+		"initialSize": 8761,
+		"inputAbbreviatedPath": "\/www\/images\/posters\/parque-jurasico.jpg",
+		"outputAbbreviatedPath": "\/www\/images\/posters\/parque-jurasico.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/posters\/selma.jpg": {
+	"\/www\/images\/posters\/selma.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 7787,
-		"inputAbbreviatedPath": "\/images\/posters\/selma.jpg",
-		"outputAbbreviatedPath": "\/images\/posters\/selma.jpg",
+		"initialSize": 7543,
+		"inputAbbreviatedPath": "\/www\/images\/posters\/selma.jpg",
+		"outputAbbreviatedPath": "\/www\/images\/posters\/selma.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/posters\/sinsajo.jpg": {
+	"\/www\/images\/posters\/sinsajo.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 15863,
-		"inputAbbreviatedPath": "\/images\/posters\/sinsajo.jpg",
-		"outputAbbreviatedPath": "\/images\/posters\/sinsajo.jpg",
+		"initialSize": 15532,
+		"inputAbbreviatedPath": "\/www\/images\/posters\/sinsajo.jpg",
+		"outputAbbreviatedPath": "\/www\/images\/posters\/sinsajo.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/posters\/tintin.jpg": {
+	"\/www\/images\/posters\/tintin.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 9000,
-		"inputAbbreviatedPath": "\/images\/posters\/tintin.jpg",
-		"outputAbbreviatedPath": "\/images\/posters\/tintin.jpg",
+		"initialSize": 8946,
+		"inputAbbreviatedPath": "\/www\/images\/posters\/tintin.jpg",
+		"outputAbbreviatedPath": "\/www\/images\/posters\/tintin.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/posters\/totoro.jpg": {
+	"\/www\/images\/posters\/totoro.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 10629,
-		"inputAbbreviatedPath": "\/images\/posters\/totoro.jpg",
-		"outputAbbreviatedPath": "\/images\/posters\/totoro.jpg",
+		"initialSize": 10505,
+		"inputAbbreviatedPath": "\/www\/images\/posters\/totoro.jpg",
+		"outputAbbreviatedPath": "\/www\/images\/posters\/totoro.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/posters\/vengadores.jpg": {
+	"\/www\/images\/posters\/vengadores.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 17637,
-		"inputAbbreviatedPath": "\/images\/posters\/vengadores.jpg",
-		"outputAbbreviatedPath": "\/images\/posters\/vengadores.jpg",
+		"initialSize": 17134,
+		"inputAbbreviatedPath": "\/www\/images\/posters\/vengadores.jpg",
+		"outputAbbreviatedPath": "\/www\/images\/posters\/vengadores.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/vengadores-l-01.jpg": {
+	"\/www\/images\/vengadores-l-01.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 286829,
-		"inputAbbreviatedPath": "\/images\/vengadores-l-01.jpg",
-		"outputAbbreviatedPath": "\/images\/vengadores-l-01.jpg",
+		"initialSize": 277460,
+		"inputAbbreviatedPath": "\/www\/images\/vengadores-l-01.jpg",
+		"outputAbbreviatedPath": "\/www\/images\/vengadores-l-01.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/vengadores-l-02.jpg": {
+	"\/www\/images\/vengadores-l-02.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 317946,
-		"inputAbbreviatedPath": "\/images\/vengadores-l-02.jpg",
-		"outputAbbreviatedPath": "\/images\/vengadores-l-02.jpg",
+		"initialSize": 306105,
+		"inputAbbreviatedPath": "\/www\/images\/vengadores-l-02.jpg",
+		"outputAbbreviatedPath": "\/www\/images\/vengadores-l-02.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/vengadores-l-03.jpg": {
+	"\/www\/images\/vengadores-l-03.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 212889,
-		"inputAbbreviatedPath": "\/images\/vengadores-l-03.jpg",
-		"outputAbbreviatedPath": "\/images\/vengadores-l-03.jpg",
+		"initialSize": 203145,
+		"inputAbbreviatedPath": "\/www\/images\/vengadores-l-03.jpg",
+		"outputAbbreviatedPath": "\/www\/images\/vengadores-l-03.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/vengadores-m-01.jpg": {
+	"\/www\/images\/vengadores-m-01.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 156035,
-		"inputAbbreviatedPath": "\/images\/vengadores-m-01.jpg",
-		"outputAbbreviatedPath": "\/images\/vengadores-m-01.jpg",
+		"initialSize": 150620,
+		"inputAbbreviatedPath": "\/www\/images\/vengadores-m-01.jpg",
+		"outputAbbreviatedPath": "\/www\/images\/vengadores-m-01.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/vengadores-m-02.jpg": {
+	"\/www\/images\/vengadores-m-02.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 153235,
-		"inputAbbreviatedPath": "\/images\/vengadores-m-02.jpg",
-		"outputAbbreviatedPath": "\/images\/vengadores-m-02.jpg",
+		"initialSize": 147933,
+		"inputAbbreviatedPath": "\/www\/images\/vengadores-m-02.jpg",
+		"outputAbbreviatedPath": "\/www\/images\/vengadores-m-02.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/vengadores-m-03.jpg": {
+	"\/www\/images\/vengadores-m-03.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 88085,
-		"inputAbbreviatedPath": "\/images\/vengadores-m-03.jpg",
-		"outputAbbreviatedPath": "\/images\/vengadores-m-03.jpg",
+		"initialSize": 84349,
+		"inputAbbreviatedPath": "\/www\/images\/vengadores-m-03.jpg",
+		"outputAbbreviatedPath": "\/www\/images\/vengadores-m-03.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/vengadores-s-01.jpg": {
+	"\/www\/images\/vengadores-s-01.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 79848,
-		"inputAbbreviatedPath": "\/images\/vengadores-s-01.jpg",
-		"outputAbbreviatedPath": "\/images\/vengadores-s-01.jpg",
+		"initialSize": 77194,
+		"inputAbbreviatedPath": "\/www\/images\/vengadores-s-01.jpg",
+		"outputAbbreviatedPath": "\/www\/images\/vengadores-s-01.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/vengadores-s-02.jpg": {
+	"\/www\/images\/vengadores-s-02.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 80490,
-		"inputAbbreviatedPath": "\/images\/vengadores-s-02.jpg",
-		"outputAbbreviatedPath": "\/images\/vengadores-s-02.jpg",
+		"initialSize": 78292,
+		"inputAbbreviatedPath": "\/www\/images\/vengadores-s-02.jpg",
+		"outputAbbreviatedPath": "\/www\/images\/vengadores-s-02.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/vengadores-s-03.jpg": {
+	"\/www\/images\/vengadores-s-03.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 38817,
-		"inputAbbreviatedPath": "\/images\/vengadores-s-03.jpg",
-		"outputAbbreviatedPath": "\/images\/vengadores-s-03.jpg",
+		"initialSize": 37555,
+		"inputAbbreviatedPath": "\/www\/images\/vengadores-s-03.jpg",
+		"outputAbbreviatedPath": "\/www\/images\/vengadores-s-03.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/index.haml": {
+	"\/www\/index.haml": {
 		"escapeHTMLCharacters": 0,
 		"fileType": 256,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/index.haml",
+		"inputAbbreviatedPath": "\/www\/index.haml",
 		"noEscapeInAttributes": 0,
-		"outputAbbreviatedPath": "\/index.html",
+		"outputAbbreviatedPath": "\/www\/index.html",
 		"outputFormat": 2,
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -417,16 +417,16 @@
 		"useDoubleQuotes": 0,
 		"useUnixNewlines": 0
 		},
-	"\/index.html": {
+	"\/www\/index.html": {
 		"fileType": 8192,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/index.html",
+		"inputAbbreviatedPath": "\/www\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/README.md": {
+	"\/www\/README.md": {
 		"criticStyle": 0,
 		"enableFootnotes": 1,
 		"enableLabels": 1,
@@ -435,9 +435,9 @@
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/README.md",
+		"inputAbbreviatedPath": "\/www\/README.md",
 		"maskEmailAddresses": 1,
-		"outputAbbreviatedPath": "\/README.html",
+		"outputAbbreviatedPath": "\/www\/README.html",
 		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -447,14 +447,14 @@
 		"randomFootnoteNumbers": 0,
 		"useCompatibilityMode": 0
 		},
-	"\/signup.haml": {
+	"\/www\/signup.haml": {
 		"escapeHTMLCharacters": 0,
 		"fileType": 256,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/signup.haml",
+		"inputAbbreviatedPath": "\/www\/signup.haml",
 		"noEscapeInAttributes": 0,
-		"outputAbbreviatedPath": "\/signup.html",
+		"outputAbbreviatedPath": "\/www\/signup.html",
 		"outputFormat": 2,
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -463,29 +463,110 @@
 		"useDoubleQuotes": 0,
 		"useUnixNewlines": 0
 		},
-	"\/signup.html": {
+	"\/www\/signup.html": {
 		"fileType": 8192,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/signup.html",
+		"inputAbbreviatedPath": "\/www\/signup.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/stylesheets\/vendors\/foundation.css": {
+	"\/www\/stylesheets\/base\/default.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/stylesheets\/vendors\/foundation.css",
+		"inputAbbreviatedPath": "\/www\/stylesheets\/base\/default.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/stylesheets\/vendors\/foundation.min.css": {
+	"\/www\/stylesheets\/base\/font-families.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/stylesheets\/vendors\/foundation.min.css",
+		"inputAbbreviatedPath": "\/www\/stylesheets\/base\/font-families.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/www\/stylesheets\/elements\/hero-controls.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/www\/stylesheets\/elements\/hero-controls.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/www\/stylesheets\/elements\/hero-information.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/www\/stylesheets\/elements\/hero-information.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/www\/stylesheets\/elements\/logo.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/www\/stylesheets\/elements\/logo.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/www\/stylesheets\/elements\/nav.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/www\/stylesheets\/elements\/nav.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/www\/stylesheets\/index.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/www\/stylesheets\/index.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/www\/stylesheets\/modules\/header.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/www\/stylesheets\/modules\/header.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/www\/stylesheets\/modules\/hero.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/www\/stylesheets\/modules\/hero.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/www\/stylesheets\/vendors\/foundation.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/www\/stylesheets\/vendors\/foundation.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/www\/stylesheets\/vendors\/foundation.min.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/www\/stylesheets\/vendors\/foundation.min.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

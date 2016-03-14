@@ -1,0 +1,12 @@
+/* logo.css: logo STYLES */
+
+header {
+background-color: rgba(0,0,0,1);
+height:60px;
+}
+
+header .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+}
