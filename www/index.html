@@ -23,7 +23,7 @@
       <div class='row'>
         <div class='wrapper'>
           <div class='logo'>
-            <a class='logo' href='#'>Jaleo</a>
+            <a href='#'>Jaleo</a>
           </div>
           <nav>
             <ul>
@@ -85,5 +85,114 @@
         </div>
       </div>
     </section>
+    <!-- main -->
+    <div id='main' role='main'>
+      <!-- catalogue -->
+      <section class='catalogue'>
+        <h2 class='hidden'>Catálogo de películas de Jaleo</h2>
+        <div class='row'>
+          <div class='filter'></div>
+          <!-- catalogue filter -->
+          <form action='submit'>
+            <fieldset id='filter' name='filter'>
+              <legend>Filtrar por</legend>
+              <label for='movie-type'>Tipo</label>
+              <select id='movie-type' name='movie-type'>
+                <option>Tipo</option>
+              </select>
+              <label for='movie-genre'>Género</label>
+              <select id='movie-genre' name='movie-genre'>
+                <option>Género</option>
+              </select>
+              <label for='new-releases'>
+                <input id='new-releases' name='new-releases' type='checkbox'>Sólo novedades</input>
+              </label>
+            </fieldset>
+            <!-- catalogue sort-by -->
+            <fieldset></fieldset>
+            <label for='catalogue-sort'>Ordenar por</label>
+            <select id='catalogue-sort' name='catalogue-sort'>
+              <option>Más populares</option>
+            </select>
+            <!-- catalogue submit -->
+            <fieldset>
+              <input type='submit' value='Actualizar lista'>
+            </fieldset>
+          </form>
+        </div>
+        <ul>
+          <li itemscope itemtype='http://schema.org/Movie'>
+            <a href='#'>
+              <img alt='Póster 127 Horas' src='images/posters/127-dias.jpg'>
+              <h3>127 Días</h3>
+              <time datetime='2010'></time>
+            </a>
+            <ul>
+              <li>
+                Lorem ipsum dolor sit amet, consectetur...
+                <a href='#'>Más</a>
+              </li>
+              <li>
+                <span itemprop='score'>4 de 5 estrellas.</span>
+              </li>
+              <li>
+                <a href='#'>
+                  <strong>2,95&euro;</strong>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <hr>
+        <div class='pagination'>
+          <p>Tenemos 456 referencias</p>
+          <a href='#'>Ver más</a>
+        </div>
+      </section>
+      <!-- publishers -->
+      <section>
+        <h2>Distribuidoras de películas en Jaleo</h2>
+        <ul>
+          <li>
+            <a href='#'>Dreamworks</a>
+          </li>
+          <li>
+            <a href='#'>Filmax</a>
+          </li>
+          <li>
+            <a href='#'>Miramax</a>
+          </li>
+          <li>
+            <a href='#'>Universal</a>
+          </li>
+          <li>
+            <a href='#'>Otras distribuidoras</a>
+          </li>
+        </ul>
+      </section>
+      <!-- steps -->
+      <section></section>
+      <h2>Paso a paso - Cómo utilizar jaleo</h2>
+      <ol>
+        <li>
+          <dl>
+            <dt>Elige tu película</dt>
+            <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>Cómprala con un click</dt>
+            <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>Disfrútala donde quieras</dt>
+            <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
+          </dl>
+        </li>
+      </ol>
+    </div>
   </body>
 </html>

@@ -24,7 +24,7 @@
       .row
         .wrapper
           .logo
-            %a.logo(href="#")Jaleo
+            %a(href="#")Jaleo
 
           %nav
             %ul
@@ -69,93 +69,95 @@
           %a.large-2.columns.primary-button(href="#")
             %span Ver Ahora
             %span 2,95€
-    -#
-    -# / main
-    -# #main(role="main")
-    -#   /catalogue
-    -#   %section.catalogue
-    -#     %h2 Catálogo de películas de Jaleo
-    -#
-    -#     / catalogue filter
-    -#     %form(action="submit")
-    -#       %fieldset#filter(name="filter")
-    -#         %legend Filtrar por
-    -#
-    -#         %label(for="movie-type") Tipo
-    -#         %select#movie-type(name="movie-type")
-    -#           %option Tipo
-    -#
-    -#         %label(for="movie-genre") Género
-    -#         %select#movie-genre(name="movie-genre")
-    -#           %option Género
-    -#
-    -#         %label(for="new-releases")
-    -#           %input#new-releases(type="checkbox" name="new-releases") Sólo novedades
-    -#
-    -#       /catalogue sort-by
-    -#       %fieldset
-    -#       %label(for="catalogue-sort") Ordenar por
-    -#       %select#catalogue-sort(name="catalogue-sort")
-    -#         %option Más populares
-    -#
-    -#       /catalogue submit
-    -#       %fieldset
-    -#         %input(type="submit" value="Actualizar lista")
-    -#
-    -#     %ul
-    -#       %li(itemscope itemtype="http://schema.org/Movie")
-    -#         %a(href="#")
-    -#           %img(src="images/posters/127-dias.jpg" alt="Póster 127 Horas")
-    -#           %h3 127 Días
-    -#           %time(datetime="2010")
-    -#
-    -#         %ul
-    -#           %li
-    -#             Lorem ipsum dolor sit amet, consectetur...
-    -#             %a(href="#") Más
-    -#           %li
-    -#             %span(itemprop="score")4 de 5 estrellas.
-    -#           %li
-    -#             %a(href="#")
-    -#               %strong 2,95&euro;
-    -#
-    -#     %hr
-    -#     .pagination
-    -#       %p Tenemos 456 referencias
-    -#       %a(href="#") Ver más
-    -#
-    -#   /publishers
-    -#   %section
-    -#     %h2 Distribuidoras de películas en Jaleo
-    -#     %ul
-    -#       %li
-    -#         %a(href="#") Dreamworks
-    -#       %li
-    -#         %a(href="#") Filmax
-    -#       %li
-    -#         %a(href="#") Miramax
-    -#       %li
-    -#         %a(href="#") Universal
-    -#       %li
-    -#         %a(href="#") Otras distribuidoras
-    -#
-    -#   /steps
-    -#   %section
-    -#   %h2 Paso a paso - Cómo utilizar jaleo
-    -#   %ol
-    -#     %li
-    -#       %dl
-    -#         %dt Elige tu película
-    -#         %dd Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    -#     %li
-    -#       %dl
-    -#         %dt Cómprala con un click
-    -#         %dd Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    -#     %li
-    -#       %dl
-    -#         %dt Disfrútala donde quieras
-    -#         %dd Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    -#
+
+    / main
+    #main(role="main")
+      /catalogue
+      %section.catalogue
+        %h2.hidden Catálogo de películas de Jaleo
+
+        .row
+          .filter
+          / catalogue filter
+          %form(action="submit")
+            %fieldset#filter(name="filter")
+              %legend Filtrar por
+
+              %label(for="movie-type") Tipo
+              %select#movie-type(name="movie-type")
+                %option Tipo
+
+              %label(for="movie-genre") Género
+              %select#movie-genre(name="movie-genre")
+                %option Género
+
+              %label(for="new-releases")
+                %input#new-releases(type="checkbox" name="new-releases") Sólo novedades
+
+            /catalogue sort-by
+            %fieldset
+            %label(for="catalogue-sort") Ordenar por
+            %select#catalogue-sort(name="catalogue-sort")
+              %option Más populares
+
+            /catalogue submit
+            %fieldset
+              %input(type="submit" value="Actualizar lista")
+
+        %ul
+          %li(itemscope itemtype="http://schema.org/Movie")
+            %a(href="#")
+              %img(src="images/posters/127-dias.jpg" alt="Póster 127 Horas")
+              %h3 127 Días
+              %time(datetime="2010")
+
+            %ul
+              %li
+                Lorem ipsum dolor sit amet, consectetur...
+                %a(href="#") Más
+              %li
+                %span(itemprop="score")4 de 5 estrellas.
+              %li
+                %a(href="#")
+                  %strong 2,95&euro;
+
+        %hr
+        .pagination
+          %p Tenemos 456 referencias
+          %a(href="#") Ver más
+
+      /publishers
+      %section
+        %h2 Distribuidoras de películas en Jaleo
+        %ul
+          %li
+            %a(href="#") Dreamworks
+          %li
+            %a(href="#") Filmax
+          %li
+            %a(href="#") Miramax
+          %li
+            %a(href="#") Universal
+          %li
+            %a(href="#") Otras distribuidoras
+
+      /steps
+      %section
+      %h2 Paso a paso - Cómo utilizar jaleo
+      %ol
+        %li
+          %dl
+            %dt Elige tu película
+            %dd Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        %li
+          %dl
+            %dt Cómprala con un click
+            %dd Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        %li
+          %dl
+            %dt Disfrútala donde quieras
+            %dd Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
     -# /main footer
     -# %footer
     -#

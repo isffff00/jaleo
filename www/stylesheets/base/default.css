@@ -1,8 +1,9 @@
 /* default.css: DEFAULT STYLES */
 
-body {
+body {odek
   min-width: 320px;
   font-family: montserrat, sans-serif;
+  background-color: #e6e6e6;
 }
 
 strong {
@@ -27,6 +28,10 @@ a {
   color: #fff;
 }
 
-* {
+a:hover {
   transition: all 0.5s ease;
+}
+
+.hidden {
+  visibility:hidden;
 }

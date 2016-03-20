@@ -1,11 +1,22 @@
 /* nav.css: nav STYLES */
 
-nav li {
-  display:inline-block;
+nav ul {
+  display:flex;
+  align-items: center;
 }
 
-nav li a {
-  padding-left:20px;
+nav ul li {
+  float:left;
+  margin-right:20px;
+  list-style:none;
+}
+
+nav ul li:last-child {
+  margin-right:0px;
+}
+
+
+nav ul li a {
   text-transform:uppercase;
   font-size:16px;
   color:#fff;
@@ -13,6 +24,43 @@ nav li a {
   opacity:0.8;
 }
 
-nav li a:hover {
+nav ul li a:hover {
   opacity:1;
+}
+
+nav ul li:nth-child(3)::before {
+  background: url('../../images/sprite.svg') no-repeat 1px -184px;
+  content: "";
+  display:inline-block;
+  width:17px;
+  height:17px;
+  margin-right:5px;
+}
+
+/* 01 tiny screens */
+@media only screen and (max-width : 640px) {
+  .hero {
+    background-color: green;
+  }
+}
+
+/* 02 small screens */
+@media only screen and (min-width : 641px) and (max-width : 767px) {
+  .hero {
+    background-color: gray;
+  }
+}
+
+/* 03 medium screens */
+@media only screen and (min-width : 768px) and (max-width : 1023px) {
+  .hero {
+    background-color: black;
+  }
+}
+
+/* 04 large screens */
+@media only screen and (min-width : 1024px) {
+  .hero {
+    background-color: blue;
+  }
 }

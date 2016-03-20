@@ -1,5 +1,10 @@
 /* logo.css: logo STYLES */
 
 .logo {
-  background-color: green;
+  display:block;
+  background: url('../../images/sprite.svg') no-repeat 1px 0px;
+  width:157px;
+  height:34px;
+  text-indent: -3000px;
+  overflow: hidden;
 }
