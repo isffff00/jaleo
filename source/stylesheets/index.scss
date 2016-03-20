@@ -1,0 +1,18 @@
+// index.css: HOMEPAGE STYLES
+
+// 01 VENDORS
+@import "vendors/foundation";
+
+// 02 BASE
+@import "base/font-families";
+@import "base/default";
+
+// 03 ELEMENTS
+@import "elements/logo";
+@import "elements/nav";
+
+
+// 04 MODULES
+@import "modules/header";
+@import "modules/hero";
+@import "modules/catalogue-controls";

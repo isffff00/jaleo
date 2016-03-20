@@ -1,0 +1,293 @@
+!!! 5
+%html(lang = "es")
+  %head
+    %meta(charset = "utf-8")
+    %title Los Vengadores La Era de Ultrón – Jaleo
+    %meta(name="description" content="Jaleo – Videoclub de Streaming Online")
+    %meta(name="author" content="Ramsés Cabello")
+
+    /= favicons
+    %link(rel="icon" href="img/favicon.ico" type="image/x-icon")
+    %link(rel="apple-touch-icon" href="touch-icon-iphone.png")
+    %link(rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png")
+    %link(rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png")
+    %link(rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png")
+
+  %body
+    / skip to content for screen readers
+    %a(href="#main") skip to content
+
+    /= header
+    %header
+
+      /= nav
+      %nav
+        %ul
+          %li
+            %a(href="#") Jaleo
+          %li
+            %a(href="#") Peelículas
+          %li
+            %a(href="#") Series
+          %li
+            %a(href="#") Explora
+          %li
+            %a(href="#") Iniciar Sesión
+
+    %main
+      /= section hero header
+      %section
+        /= movie details
+        %aside(itemscope itemtype="http://schema.org/Movie")
+          %h1 Los Vengadores La Era de Ultrón
+          %time(datetime="2015") 2015
+          %span(itemprop="contentRating")+18
+          %span(itemprop="quality")
+            %abbr(title = "High Definition")HD
+          %time(datetime="PT1H30M")1h 30min
+          %span(itemprop="score")4 de 5 estrellas
+          %a(href='#') Compartir
+
+        %ul
+          %li
+            %a(href='#') &#9829; Guardar para después
+            %a(href='#') Ver ahora <strong>2,95€</strong>
+
+
+        %a(href='#') Ver trailer
+
+    /= section awards
+    %h3 Premios y nominaciones
+    %ul
+      %li 2 nominaciones Globos de Oro
+      %li 1 nominación Oscar (guión)
+
+
+    /= section excerpt
+    %h3 Sinopsis
+    %article
+      %blockquote
+        %p
+          El destino del planeta pende de un hilo cuando Tony Stark intenta hacer funcionar un inactivo programa para mantener la paz. Las cosas le salen mal y los héroes más poderosos incluyendo Iron Man (Robert Downey Jr.) Capitán América (Chris Evans) la Viuda Negra (Scarlett Johansson) Thor (Chris Hemsworth) el Increíble Hulk (Mark Ruffalo) y Ojo de Halcón (Jeremy Renner) se ven enfrentados a la prueba definitiva.
+        %p
+          Los Vengadores la era de Ultrón es la segunda película de la saga protagonizada por los héroes más poderosos del mundo. El reparto cuenta con Robert Downey Jr. (Iron Man) Chris Evans (Capitán América) Scarlett Johansson (Viuda Negra) Chris Hemsworth (Thor),
+      %a(href='#') Ver más
+      %footer
+        %a(href="#") Tag 1
+        |
+        %a(href="#") Tag 2
+        |
+        %a(href="#") Tag 3
+        |
+        %a(href="#") Tag 4
+
+    /= section technical details
+    %h3 Ficha Técnica
+    %dl
+      %dt Director
+      %dd Jos Whedon
+      %dt Productora
+      %dd Marvel Studios
+      %dt Género
+      %dd Acción y aventura
+      %dt Duración
+      %dd 1h 34 min
+      %dt Formato
+      %dd HD Panorámico
+      %dt Calificación
+      %dd +18
+      %dt Idiomas
+      %dd
+        %ul
+          %li Español
+          %li Inglés
+          %li Francés
+          %li Alemán
+          %li
+            %a(href="#") Más
+      %dt Subtítulos
+      %dd
+        %ul
+          %li Español
+          %li Inglés
+          %li Francés
+          %li Alemán
+
+    /= section earnings
+    %h3 Recaudación
+    %table
+      %tr
+        %th Estreno
+        %th Zona
+        %th Importa ($)
+        %th Espectadores
+      %tr
+        %td 21/abr/2015
+        %td Europa
+        %td 1.75M
+        %td 2.5M
+      %tr
+        %td 5/ene/2015
+        %td EE.UU
+        %td 1.75M
+        %td 2.5M
+      %tr
+        %td 5/ene/2015
+        %td Canadá
+        %td 753.000
+        %td 0.5M
+      %tr
+        %td 5/jun/2015
+        %td Asia
+        %td 1.75M
+        %td 1.5M
+      %tr
+        %td 27/mar/2015
+        %td LATAM
+        %td 1.05M
+        %td 0.75M
+      %tr
+        %td
+          Fuentes
+          %a(href='#') lorem ipsum dolor sit amet (->)
+
+    /= section cast
+    %h3 Reparto y equipo
+    %ul
+      %li(itemscope itemtype="http://schema.org/Persona")
+        %img(src='images/cast/joss-whedon.jpg' alt="Fotografía de perfil de Joss Whedon")
+        %h4(itemprop="name") Josh Whedon
+        %span DIRECTOR
+      %li(itemscope itemtype="http://schema.org/Persona")
+        %img(src='images/cast/robert-downey-jr.jpg' alt="Fotografía de perfil de Robert Downey Jr.")
+        %dl
+          %dt
+            %span(itemprop="name") Robert Downey Jr.
+          %dd
+            ACTOR
+      %li(itemscope itemtype="http://schema.org/Persona")
+        %img(src='images/cast/chris-evans.jpg' alt="Fotografía de perfil de Chris Evans")
+        %dl
+          %dt
+            %span(itemprop="name") Chris Evans
+          %dd
+            ACTOR
+      %li(itemscope itemtype="http://schema.org/Persona")
+        %img(src='images/cast/scarlett-johansson.jpg' alt="Fotografía de perfil de Scarlett Johansson")
+        %dl
+          %dt
+            %span(itemprop="name") Scarlett Johansson
+          %dd
+            ACTRIZ
+      %li(itemscope itemtype="http://schema.org/Persona")
+        %img(src='images/cast/chris-hemsworth.jpg' alt="Fotografía de perfil de Chris Hemsworth")
+        %dl
+          %dt
+            %span(itemprop="name") Chris Hemsworth
+          %dd
+            ACTOR
+      %li(itemscope itemtype="http://schema.org/Persona")
+        %a(href='') Ver más
+
+
+    /= section recommended
+    %h3 También te puede interesar
+    %ul
+      %li(itemscope itemtype="http://schema.org/Movie")
+        %a(href='#')
+          %img(src='images/posters/127-dias.jpg' alt='Póster 127 Horas')
+        %a(href='#')
+          %h4(itemprop="name") 127 Días
+        %p
+          Lorem ipsum dolor sit amet consectetur...
+          %a(href='#') Más
+        %span(itemprop='score') 4 de 5 estrellas
+        %a(href='#') <strong>2,95€</strong>
+
+      %li(itemscope itemtype="http://schema.org/Movie")
+        %a(href='#')
+          %img(src='images/posters/127-dias.jpg' alt='Póster 127 Horas')
+        %a(href='#')
+          %h4 127 Días
+        %p
+          Lorem ipsum dolor sit amet consectetur...
+          %a(href='#') Más
+        %span(itemprop='score') 4 de 5 estrellas
+        %a(href='#') <strong>2,95€</strong>
+
+      %li(itemscope itemtype="http://schema.org/Movie")
+        %a(href='#')
+          %img(src='images/posters/127-dias.jpg' alt='Póster 127 Horas')
+        %a(href='#')
+          %h4 127 Días
+        %p
+          Lorem ipsum dolor sit amet consectetur...
+          %a(href='#') Más
+        %span(itemprop='score') 4 de 5 estrellas
+        %a(href='#') <strong>2,95€</strong>
+
+      %li(itemscope itemtype="http://schema.org/Movie")
+        %a(href='#')
+          %img(src='images/posters/127-dias.jpg' alt='Póster 127 Horas')
+        %a(href='#')
+          %h4 127 Días
+        %p
+          Lorem ipsum dolor sit amet consectetur...
+          %a(href='#') Más
+        %span(itemprop='score') 4 de 5 estrellas
+        %a(href='#') <strong>2,95€</strong>
+
+    / main footer
+    %footer
+      / page links
+      %h2 Página
+      %ul
+        %li
+          %a(href = "") Blog
+        %li
+          %a(href = "") Prensa
+        %li
+          %a(href = "") Condiciones de Uso
+        %li
+          %a(href = "") Privacidad
+        %li
+          %a(href = "") Soporte
+      / corporate links
+      %h2 Corporativo
+      %ul
+        %li
+          %a(href = "") Nosotros
+        %li
+          %a(href = "") Contacto
+        %li
+          %a(href = "#" hreflang = "en") English Site
+        %li
+          %a(href = "#" hreflang = "de") Deutsch Website
+        %li
+          %a(href = "#" hreflang = "fr") Site français
+      / social links
+      %h2 Síguenos
+      %ul
+        %li
+          %a(href = "#") Facebook
+        %li
+          %a(href = "#") Twitter
+        %li
+          %a(href = "#") Pinterest
+      / about
+      %h2 Dirección
+      %small(rel = "license") &copy;  Jaleo de España S.A.
+      .vcard
+        %p.fn
+          %a.url(href = "#") Jaleo
+        %p
+        %p.adr
+          %span.street-address Calle del Rey 23
+          %br/
+          %span.postal-code 28080
+          %span.region MADRID
+          %br/
+          %span.country-name(style = "displaynone") España
+        %p.tel 0034 555 55 65 85
+        %a(href = "mailtoinfo@jaleoapp.es") info@jaleoapp.es
+    / / main footer

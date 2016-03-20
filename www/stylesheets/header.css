@@ -1,0 +1,8 @@
+/* logo.css: logo STYLES */
+header {
+  background-color: black;
+  height: 60px; }
+  header .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
