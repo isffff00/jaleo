@@ -1,0 +1,26 @@
+/* filter.css: FILTER STYLES */
+
+.filter {
+  flex-direction: row;
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+
+  .filter-main, .filter-order  {
+    flex-grow: 0.5;
+  }
+
+  .filter-update {
+    display:none;
+  }
+
+  form {
+    input, fieldset, select, label {
+      display:inline;
+      width:auto;
+    }
+    
+  }
+}

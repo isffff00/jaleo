@@ -31,7 +31,15 @@ body {
   }
 
   .hidden {
-    visibility:hidden;
+    display:none;
+  }
+
+  fieldset {
+    border: 0px;
+
+    legend {
+      visibility:hidden;
+    }
   }
 
 }
