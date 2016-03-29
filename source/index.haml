@@ -444,91 +444,105 @@
             %a(href="#") Ver más
 
       /publishers
-      %section
-        %h2 Distribuidoras de películas en Jaleo
-        %ul
-          %li
-            %a(href="#") Dreamworks
-          %li
-            %a(href="#") Filmax
-          %li
-            %a(href="#") Miramax
-          %li
-            %a(href="#") Universal
-          %li
-            %a(href="#") Otras distribuidoras
+      %section.publishers
+        .row
+          .large-12.columns
+            %h2.hidden Distribuidoras de películas en Jaleo
+            %ul
+              %li
+                %a(href="#") Dreamworks
+              %li
+                %a(href="#") Filmax
+              %li
+                %a(href="#") Miramax
+              %li
+                %a(href="#") Universal
+              %li
+                %a(href="#") Otras distribuidoras
 
       /steps
-      %section
-      %h2 Paso a paso - Cómo utilizar jaleo
-      %ol
-        %li
-          %dl
-            %dt Elige tu película
-            %dd Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        %li
-          %dl
-            %dt Cómprala con un click
-            %dd Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        %li
-          %dl
-            %dt Disfrútala donde quieras
-            %dd Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      %section.steps
+        .row
+          %h2.hidden Paso a paso - Cómo utilizar jaleo
+          %ol
+            %li.large-4.columns
+              %dl
+                %dt Elige tu película
+                %dd Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-    -# /main footer
-    -# %footer
-    -#
-    -#   /page links
-    -#   %h2 Página
-    -#   %ul
-    -#     %li
-    -#       %a(href="#") Blog
-    -#     %li
-    -#       %a(href="#") Prensa
-    -#     %li
-    -#       %a(href="#") Condiciones de Uso
-    -#     %li
-    -#       %a(href="#") Privacidad
-    -#     %li
-    -#       %a(href="#") Soporte
-    -#
-    -#   /corporate links
-    -#   %h2 Corporate
-    -#   %ul
-    -#     %li
-    -#       %a(href="#") Nosotros
-    -#     %li
-    -#       %a(href="#") Contacto
-    -#     %li
-    -#       %a(href="#" hreflang="en") English Site
-    -#     %li
-    -#       %a(href="#" hreflang="de") Deutsch Website
-    -#     %li
-    -#       %a(href="#" hreflang="fr") Site Français
-    -#
-    -#   /social links
-    -#   %h2 Síguenos
-    -#   %ul
-    -#     %li
-    -#       %a(href="#") Facebook
-    -#     %li
-    -#       %a(href="#") Facebook
-    -#     %li
-    -#       %a(href="#") Facebook
-    -#
-    -#   /about
-    -#   %h2 Dirección
-    -#   %small(rel="license") &copy;  Jaleo de España S.A.
-    -#   .vcard
-    -#     %p.fn
-    -#       %a.url(href="#") Jaleo
-    -#     %p.adr
-    -#       %span.street-address Calle del Rey, 23
-    -#       %br
-    -#       %span.postal-code 28080
-    -#       %span.region MADRID
-    -#       %span.country-name España
-    -#     %p.tel 0034 555 55 65 85
-    -#     %a(href="mailto:info@jaleoapp.es") info&#x40;jaleoapp.es
+            %li.large-4.columns
+              %dl
+                %dt Cómprala con un click
+                %dd Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-    %script(type="text/javascript" src="javascripts/custom.js")
+            %li.large-4.columns
+              %dl
+                %dt Disfrútala donde quieras
+                %dd Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+    /main footer
+    %footer
+      .row
+        .large-3.columns
+          /page links
+          %h2 Página
+          %ul
+            %li
+              %a(href="#") Blog
+            %li
+              %a(href="#") Prensa
+            %li
+              %a(href="#") Condiciones de Uso
+            %li
+              %a(href="#") Privacidad
+            %li
+              %a(href="#") Soporte
+
+        .large-3.columns
+          /corporate links
+          %h2 Corporativo
+          %ul
+            %li
+              %a(href="#") Nosotros
+            %li
+              %a(href="#") Contacto
+            %li
+              %a(href="#" hreflang="en") English Site
+            %li
+              %a(href="#" hreflang="de") Deutsch Website
+            %li
+              %a(href="#" hreflang="fr") Site Français
+
+        .large-3.columns
+          /social links
+          %h2 Síguenos
+          %ul
+            %li
+              %a(href="#") Facebook
+            %li
+              %a(href="#") Facebook
+            %li
+              %a(href="#") Facebook
+
+        .large-3.columns
+          /about
+          .footer-info
+            .logo
+              %a(href="#")Jaleo
+            %hr
+            %h2.hidden Dirección
+            .vcard
+              %p.fn.hidden
+                %a.url(href="#") Jaleo
+              %p.adr
+                %small(rel="license") &copy;  Jaleo de España S.A.
+                %br
+                %span.street-address Calle del Rey, 23
+                %span.postal-code 28080
+                %span.region MADRID
+                %span.country-name España
+              %p.tel 0034 555 55 65 85
+              %p
+                %a(href="mailto:info@jaleoapp.es") info&#x40;jaleoapp.es
+
+      %script(type="text/javascript" src="javascripts/custom.js")

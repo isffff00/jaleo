@@ -5,6 +5,10 @@ body {
   font-family: montserrat, sans-serif;
   background-color: #e6e6e6;
 
+  small {
+    font-size:12px;
+  }
+
   strong {
     font-weight: 700;
   }
@@ -31,7 +35,12 @@ body {
   }
 
   .hidden {
-    display:none;
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
   }
 
   fieldset {

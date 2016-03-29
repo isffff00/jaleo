@@ -3,6 +3,8 @@ body {
   min-width: 320px;
   font-family: montserrat, sans-serif;
   background-color: #e6e6e6; }
+  body small {
+    font-size: 12px; }
   body strong {
     font-weight: 700; }
   body a {
@@ -18,7 +20,12 @@ body {
     border: 2px solid #fff;
     color: #fff; }
   body .hidden {
-    display: none; }
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden; }
   body fieldset {
     border: 0px; }
     body fieldset legend {

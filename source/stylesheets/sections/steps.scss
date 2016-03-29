@@ -1,0 +1,49 @@
+/* steps.css: STEPS STYLES */
+
+.steps {
+  padding-bottom: 50px;
+  ol {
+    li {
+      display:inline-block;
+      &:nth-child(1):before {
+        background: url('../images/sprite.svg') no-repeat 2px -824px;
+        content: "";
+        display:inline-block;
+        width:48px;
+        height:45px;
+        margin-right:5px;
+      }
+      &:nth-child(2):before {
+        background: url('../images/sprite.svg') no-repeat 2px -914px;
+        content: "";
+        display:inline-block;
+        width:31px;
+        height:46px;
+        margin-right:5px;
+      }
+      &:nth-child(3):before {
+        background: url('../images/sprite.svg') no-repeat 2px -1004px;
+        content: "";
+        display:inline-block;
+        width:32px;
+        height:36px;
+        margin-right:5px;
+      }
+      dl {
+        dt {
+          font-size: 24px;
+          color: #000;
+          font-weight: 800;
+          line-height:20px;
+          margin-bottom:30px;
+        }
+        dd {
+          margin-left:0px;
+          font-family: 'PT-Serif', serif;
+          font-size: 17px;
+          color: #333;
+        }
+      }
+    }
+  }
+}

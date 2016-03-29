@@ -1,0 +1,43 @@
+/* footer.css: FOOTER STYLES */
+
+footer {
+  color:#fff;
+  background-color: #d4145a;
+  padding: 50px 0px 50px 0px;
+  h2 {
+    font-size:12px;
+    color: #fff;
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+  }
+  ul {
+    padding:0px;
+    li {
+      display:list-item;
+      list-style:none;
+      a {
+        font-size:14px;
+        color: #fff;
+        opacity:0.8;
+        &:hover {
+          opacity:1;
+        }
+      }
+    }
+  }
+  hr {
+    border-bottom:4px solid #fff;
+    width:30%;
+    opacity:0.5;
+    margin-top:20px;
+    margin-right:80%;
+  }
+
+  .footer-info {
+    font-size:12px;
+    a {
+      color: #fff;
+    }
+  }
+}
