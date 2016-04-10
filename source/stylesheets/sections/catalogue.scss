@@ -17,20 +17,24 @@
     border-bottom: 1px solid #b3b3b3;
     padding-bottom: 30px;
 
+    .movie {
+      float:left;
+    }
+
     li {
       display:inline;
       list-style:none;
-      .movie {
+      .main-info {
         position:relative;
         width:140px;
         height:210px;
         overflow:hidden;
-        &:hover .movie-hover {
+        &:hover .extra-info {
           opacity:1;
           transition:opacity 0.2s;
         }
       }
-      .movie-hover {
+      .extra-info {
         width:140px;
         height:210px;
         position:absolute;

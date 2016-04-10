@@ -7,13 +7,10 @@
     <meta content='Ramsés Cabello' name='author'>
     <!-- favicons -->
     <link href='img/favicon.ico' rel='icon' type='image/x-icon'>
-    <link href='touch-icon-iphone.png' rel='apple-touch-icon'>
-    <link href='touch-icon-ipad.png' rel='apple-touch-icon' sizes='76x76'>
-    <link href='touch-icon-iphone-retina.png' rel='apple-touch-icon' sizes='120x120'>
-    <link href='touch-icon-ipad-retina.png' rel='apple-touch-icon' sizes='152x152'>
     <link href='stylesheets/index.css' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <script src='https://code.jquery.com/jquery-1.12.0.min.js'></script>
   </head>
   <body>
     <!-- skip to content -->
@@ -78,7 +75,7 @@
             </ul>
           </div>
           <div class='more-info large-2 columns'>
-            <a class='secondary-button' href='#'>Más Info</a>
+            <a class='secondary-button' href='http://google.com'>Más Info</a>
           </div>
           <div class='watch-now large-2 columns'>
             <a class='primary-button' href='#'>
@@ -103,11 +100,28 @@
                   <legend>Filtrar por</legend>
                   <label for='movie-type'>Tipo</label>
                   <select id='movie-type' name='movie-type'>
-                    <option>Tipo</option>
+                    <option value='00'>Tipo</option>
+                    <option value='film'>Películas</option>
+                    <option value='show'>Series</option>
                   </select>
                   <label for='movie-genre'>Género</label>
                   <select id='movie-genre' name='movie-genre'>
-                    <option>Género</option>
+                    <option value='00'>Género</option>
+                    <option value='family'>Para toda la familia</option>
+                    <option value='action'>Acción y aventuras</option>
+                    <option value='animation'>Animación</option>
+                    <option value='drama'>Drama</option>
+                    <option value='comedia'>Comedia</option>
+                    <option value='science-fiction'>Ciencia ficción y fantasía</option>
+                    <option value='classic'>Clásicos</option>
+                    <option value='sports'>Deportes</option>
+                    <option value='documentary'>Documental</option>
+                    <option value='indie'>Independiente</option>
+                    <option value='kids'>Infantil</option>
+                    <option value='musical'>Musical</option>
+                    <option value='romance'>Romance</option>
+                    <option value='horror'>Terror y suspense</option>
+                    <optio value='western'>n Western</optio>
                   </select>
                   <label for='new-releases'>
                     <input id='new-releases' name='new-releases' type='checkbox'>Sólo novedades</input>
@@ -133,425 +147,462 @@
             </div>
           </div>
           <div class='row'>
+            <div class='large-12 columns no-results'>
+              No existe multimedia con este criterio.
+            </div>
+          </div>
+          <div class='row'>
             <div class='film-grid'>
               <ul class='large-12 columns'>
-                <li class='large-2 columns' itemscope itemtype='http://schema.org/Movie'>
-                  <div class='movie'>
-                    <a href='#'>
-                      <img alt='Póster 127 Horas' src='images/posters/127-dias.jpg'>
-                    </a>
-                    <div class='movie-hover'>
-                      <ul>
-                        <li>
-                          Lorem ipsum dolor sit amet, sit amet...
-                          <a href='#'>Más</a>
-                        </li>
-                        <li>
-                          <span itemprop='score'>4 de 5 estrellas.</span>
-                          <a href='#'>
-                            <strong>2,95&euro;</strong>
-                          </a>
-                        </li>
-                      </ul>
+                <li class='large-2 columns'>
+                  <div class='movie' data-genre='drama' data-new='false' data-type='film' itemscope itemtype='http://schema.org/Movie'>
+                    <div class='main-info' data-href='http://www.imdb.com/title/tt1542344/externalsites'>
+                      <a href='#'>
+                        <img alt='Póster 127 Horas' src='images/posters/127-dias.jpg'>
+                      </a>
+                      <div class='extra-info'>
+                        <ul>
+                          <li>
+                            Lorem ipsum dolor sit amet, sit amet...
+                            <a href='#'>Más</a>
+                          </li>
+                          <li>
+                            <span itemprop='score'>4 de 5 estrellas.</span>
+                            <a href='#'>
+                              <strong>2,95&euro;</strong>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
+                    <h3>127 Días</h3>
+                    <time datetime='2010'>2010</time>
                   </div>
-                  <h3>127 Días</h3>
-                  <time datetime='2010'>2010</time>
                 </li>
-                <li class='large-2 columns' itemscope itemtype='http://schema.org/Movie'>
-                  <div class='movie'>
-                    <a href='#'>
-                      <img alt='Póster 127 Horas' src='images/posters/apocalypse-now.jpg'>
-                    </a>
-                    <div class='movie-hover'>
-                      <ul>
-                        <li>
-                          Lorem ipsum dolor sit amet, sit amet...
-                          <a href='#'>Más</a>
-                        </li>
-                        <li>
-                          <span itemprop='score'>4 de 5 estrellas.</span>
-                          <a href='#'>
-                            <strong>2,95&euro;</strong>
-                          </a>
-                        </li>
-                      </ul>
+                <li class='large-2 columns'>
+                  <div class='movie' data-genre='horror' data-new='false' data-type='film' itemscope itemtype='http://schema.org/Movie'>
+                    <div class='main-info'>
+                      <a href='#'>
+                        <img alt='Póster Apocalypse Now' src='images/posters/apocalypse-now.jpg'>
+                      </a>
+                      <div class='extra-info'>
+                        <ul>
+                          <li>
+                            Lorem ipsum dolor sit amet, sit amet...
+                            <a href='#'>Más</a>
+                          </li>
+                          <li>
+                            <span itemprop='score'>4 de 5 estrellas.</span>
+                            <a href='#'>
+                              <strong>2,95&euro;</strong>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
+                    <h3>Apocalypse Now</h3>
+                    <time datetime='2010'>2010</time>
                   </div>
-                  <h3>127 Días</h3>
-                  <time datetime='2010'>2010</time>
                 </li>
-                <li class='large-2 columns' itemscope itemtype='http://schema.org/Movie'>
-                  <div class='movie'>
-                    <a href='#'>
-                      <img alt='Póster 127 Horas' src='images/posters/dracula.jpg'>
-                    </a>
-                    <div class='movie-hover'>
-                      <ul>
-                        <li>
-                          Lorem ipsum dolor sit amet, sit amet...
-                          <a href='#'>Más</a>
-                        </li>
-                        <li>
-                          <span itemprop='score'>4 de 5 estrellas.</span>
-                          <a href='#'>
-                            <strong>2,95&euro;</strong>
-                          </a>
-                        </li>
-                      </ul>
+                <li class='large-2 columns'>
+                  <div class='movie' data-genre='classic' data-new='false' data-type='film' itemscope itemtype='http://schema.org/Movie'>
+                    <div class='main-info'>
+                      <a href='#'>
+                        <img alt='Póster Dracula' src='images/posters/dracula.jpg'>
+                      </a>
+                      <div class='extra-info'>
+                        <ul>
+                          <li>
+                            Lorem ipsum dolor sit amet, sit amet...
+                            <a href='#'>Más</a>
+                          </li>
+                          <li>
+                            <span itemprop='score'>4 de 5 estrellas.</span>
+                            <a href='#'>
+                              <strong>2,95&euro;</strong>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
+                    <h3>Dracula</h3>
+                    <time datetime='2010'>2010</time>
                   </div>
-                  <h3>127 Días</h3>
-                  <time datetime='2010'>2010</time>
                 </li>
-                <li class='large-2 columns' itemscope itemtype='http://schema.org/Movie'>
-                  <div class='movie'>
-                    <a href='#'>
-                      <img alt='Póster 127 Horas' src='images/posters/selma.jpg'>
-                    </a>
-                    <div class='movie-hover'>
-                      <ul>
-                        <li>
-                          Lorem ipsum dolor sit amet, sit amet...
-                          <a href='#'>Más</a>
-                        </li>
-                        <li>
-                          <span itemprop='score'>4 de 5 estrellas.</span>
-                          <a href='#'>
-                            <strong>2,95&euro;</strong>
-                          </a>
-                        </li>
-                      </ul>
+                <li class='large-2 columns'>
+                  <div class='movie' data-genre='drama' data-new='true' data-type='film' itemscope itemtype='http://schema.org/Movie'>
+                    <div class='main-info'>
+                      <a href='#'>
+                        <img alt='Póster Selma' src='images/posters/selma.jpg'>
+                      </a>
+                      <div class='extra-info'>
+                        <ul>
+                          <li>
+                            Lorem ipsum dolor sit amet, sit amet...
+                            <a href='#'>Más</a>
+                          </li>
+                          <li>
+                            <span itemprop='score'>4 de 5 estrellas.</span>
+                            <a href='#'>
+                              <strong>2,95&euro;</strong>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
+                    <h3>Selma</h3>
+                    <time datetime='2010'>2010</time>
                   </div>
-                  <h3>127 Días</h3>
-                  <time datetime='2010'>2010</time>
                 </li>
-                <li class='large-2 columns' itemscope itemtype='http://schema.org/Movie'>
-                  <div class='movie'>
-                    <a href='#'>
-                      <img alt='Póster 127 Horas' src='images/posters/batman.jpg'>
-                    </a>
-                    <div class='movie-hover'>
-                      <ul>
-                        <li>
-                          Lorem ipsum dolor sit amet, sit amet...
-                          <a href='#'>Más</a>
-                        </li>
-                        <li>
-                          <span itemprop='score'>4 de 5 estrellas.</span>
-                          <a href='#'>
-                            <strong>2,95&euro;</strong>
-                          </a>
-                        </li>
-                      </ul>
+                <li class='large-2 columns'>
+                  <div class='movie' data-genre='action' data-new='false' data-type='show' itemscope itemtype='http://schema.org/Movie'>
+                    <div class='main-info'>
+                      <a href='#'>
+                        <img alt='Póster Batman' src='images/posters/batman.jpg'>
+                      </a>
+                      <div class='extra-info'>
+                        <ul>
+                          <li>
+                            Lorem ipsum dolor sit amet, sit amet...
+                            <a href='#'>Más</a>
+                          </li>
+                          <li>
+                            <span itemprop='score'>4 de 5 estrellas.</span>
+                            <a href='#'>
+                              <strong>2,95&euro;</strong>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
+                    <h3>Batman</h3>
+                    <time datetime='2010'>2010</time>
                   </div>
-                  <h3>127 Días</h3>
-                  <time datetime='2010'>2010</time>
                 </li>
-                <li class='large-2 columns' itemscope itemtype='http://schema.org/Movie'>
-                  <div class='movie'>
-                    <a href='#'>
-                      <img alt='Póster 127 Horas' src='images/posters/et.jpg'>
-                    </a>
-                    <div class='movie-hover'>
-                      <ul>
-                        <li>
-                          Lorem ipsum dolor sit amet, sit amet...
-                          <a href='#'>Más</a>
-                        </li>
-                        <li>
-                          <span itemprop='score'>4 de 5 estrellas.</span>
-                          <a href='#'>
-                            <strong>2,95&euro;</strong>
-                          </a>
-                        </li>
-                      </ul>
+                <li class='large-2 columns'>
+                  <div class='movie' data-genre='science-fiction' data-new='false' data-type='film' itemscope itemtype='http://schema.org/Movie'>
+                    <div class='main-info'>
+                      <a href='#'>
+                        <img alt='Póster E.T.' src='images/posters/et.jpg'>
+                      </a>
+                      <div class='extra-info'>
+                        <ul>
+                          <li>
+                            Lorem ipsum dolor sit amet, sit amet...
+                            <a href='#'>Más</a>
+                          </li>
+                          <li>
+                            <span itemprop='score'>4 de 5 estrellas.</span>
+                            <a href='#'>
+                              <strong>2,95&euro;</strong>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
+                    <h3>E.T.</h3>
+                    <time datetime='2010'>2010</time>
                   </div>
-                  <h3>127 Días</h3>
-                  <time datetime='2010'>2010</time>
                 </li>
-              </ul>
-              <ul class='large-12 columns'>
-                <li class='large-2 columns' itemscope itemtype='http://schema.org/Movie'>
-                  <div class='movie'>
-                    <a href='#'>
-                      <img alt='Póster 127 Horas' src='images/posters/amelie.jpg'>
-                    </a>
-                    <div class='movie-hover'>
-                      <ul>
-                        <li>
-                          Lorem ipsum dolor sit amet, sit amet...
-                          <a href='#'>Más</a>
-                        </li>
-                        <li>
-                          <span itemprop='score'>4 de 5 estrellas.</span>
-                          <a href='#'>
-                            <strong>2,95&euro;</strong>
-                          </a>
-                        </li>
-                      </ul>
+                <li class='large-2 columns'>
+                  <div class='movie' data-genre='indie' data-new='false' data-type='film' itemscope itemtype='http://schema.org/Movie'>
+                    <div class='main-info'>
+                      <a href='#'>
+                        <img alt='Póster Amelie' src='images/posters/amelie.jpg'>
+                      </a>
+                      <div class='extra-info'>
+                        <ul>
+                          <li>
+                            Lorem ipsum dolor sit amet, sit amet...
+                            <a href='#'>Más</a>
+                          </li>
+                          <li>
+                            <span itemprop='score'>4 de 5 estrellas.</span>
+                            <a href='#'>
+                              <strong>2,95&euro;</strong>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
+                    <h3>Amelie</h3>
+                    <time datetime='2010'>2010</time>
                   </div>
-                  <h3>127 Días</h3>
-                  <time datetime='2010'>2010</time>
                 </li>
-                <li class='large-2 columns' itemscope itemtype='http://schema.org/Movie'>
-                  <div class='movie'>
-                    <a href='#'>
-                      <img alt='Póster 127 Horas' src='images/posters/cisne-negro.jpg'>
-                    </a>
-                    <div class='movie-hover'>
-                      <ul>
-                        <li>
-                          Lorem ipsum dolor sit amet, sit amet...
-                          <a href='#'>Más</a>
-                        </li>
-                        <li>
-                          <span itemprop='score'>4 de 5 estrellas.</span>
-                          <a href='#'>
-                            <strong>2,95&euro;</strong>
-                          </a>
-                        </li>
-                      </ul>
+                <li class='large-2 columns'>
+                  <div class='movie' data-genre='drama' data-new='false' data-type='film' itemscope itemtype='http://schema.org/Movie'>
+                    <div class='main-info'>
+                      <a href='#'>
+                        <img alt='Póster Cisne Negro' src='images/posters/cisne-negro.jpg'>
+                      </a>
+                      <div class='extra-info'>
+                        <ul>
+                          <li>
+                            Lorem ipsum dolor sit amet, sit amet...
+                            <a href='#'>Más</a>
+                          </li>
+                          <li>
+                            <span itemprop='score'>4 de 5 estrellas.</span>
+                            <a href='#'>
+                              <strong>2,95&euro;</strong>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
+                    <h3>Cisne Negro</h3>
+                    <time datetime='2010'>2010</time>
                   </div>
-                  <h3>127 Días</h3>
-                  <time datetime='2010'>2010</time>
                 </li>
-                <li class='large-2 columns' itemscope itemtype='http://schema.org/Movie'>
-                  <div class='movie'>
-                    <a href='#'>
-                      <img alt='Póster 127 Horas' src='images/posters/her.jpg'>
-                    </a>
-                    <div class='movie-hover'>
-                      <ul>
-                        <li>
-                          Lorem ipsum dolor sit amet, sit amet...
-                          <a href='#'>Más</a>
-                        </li>
-                        <li>
-                          <span itemprop='score'>4 de 5 estrellas.</span>
-                          <a href='#'>
-                            <strong>2,95&euro;</strong>
-                          </a>
-                        </li>
-                      </ul>
+                <li class='large-2 columns'>
+                  <div class='movie' data-genre='science-fiction' data-new='false' data-type='film' itemscope itemtype='http://schema.org/Movie'>
+                    <div class='main-info'>
+                      <a href='#'>
+                        <img alt='Póster HER' src='images/posters/her.jpg'>
+                      </a>
+                      <div class='extra-info'>
+                        <ul>
+                          <li>
+                            Lorem ipsum dolor sit amet, sit amet...
+                            <a href='#'>Más</a>
+                          </li>
+                          <li>
+                            <span itemprop='score'>4 de 5 estrellas.</span>
+                            <a href='#'>
+                              <strong>2,95&euro;</strong>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
+                    <h3>HER</h3>
+                    <time datetime='2010'>2010</time>
                   </div>
-                  <h3>127 Días</h3>
-                  <time datetime='2010'>2010</time>
                 </li>
-                <li class='large-2 columns' itemscope itemtype='http://schema.org/Movie'>
-                  <div class='movie'>
-                    <a href='#'>
-                      <img alt='Póster 127 Horas' src='images/posters/el-silencio-de-los-corderos.jpg'>
-                    </a>
-                    <div class='movie-hover'>
-                      <ul>
-                        <li>
-                          Lorem ipsum dolor sit amet, sit amet...
-                          <a href='#'>Más</a>
-                        </li>
-                        <li>
-                          <span itemprop='score'>4 de 5 estrellas.</span>
-                          <a href='#'>
-                            <strong>2,95&euro;</strong>
-                          </a>
-                        </li>
-                      </ul>
+                <li class='large-2 columns'>
+                  <div class='movie' data-genre='horror' data-new='false' data-type='film' itemscope itemtype='http://schema.org/Movie'>
+                    <div class='main-info'>
+                      <a href='#'>
+                        <img alt='Póster El silencio de los corderos' src='images/posters/el-silencio-de-los-corderos.jpg'>
+                      </a>
+                      <div class='extra-info'>
+                        <ul>
+                          <li>
+                            Lorem ipsum dolor sit amet, sit amet...
+                            <a href='#'>Más</a>
+                          </li>
+                          <li>
+                            <span itemprop='score'>4 de 5 estrellas.</span>
+                            <a href='#'>
+                              <strong>2,95&euro;</strong>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
+                    <h3>El silencio de...</h3>
+                    <time datetime='2010'>2010</time>
                   </div>
-                  <h3>127 Días</h3>
-                  <time datetime='2010'>2010</time>
                 </li>
-                <li class='large-2 columns' itemscope itemtype='http://schema.org/Movie'>
-                  <div class='movie'>
-                    <a href='#'>
-                      <img alt='Póster 127 Horas' src='images/posters/avatar.jpg'>
-                    </a>
-                    <div class='movie-hover'>
-                      <ul>
-                        <li>
-                          Lorem ipsum dolor sit amet, sit amet...
-                          <a href='#'>Más</a>
-                        </li>
-                        <li>
-                          <span itemprop='score'>4 de 5 estrellas.</span>
-                          <a href='#'>
-                            <strong>2,95&euro;</strong>
-                          </a>
-                        </li>
-                      </ul>
+                <li class='large-2 columns'>
+                  <div class='movie' data-genre='adventure' data-new='false' data-type='film' itemscope itemtype='http://schema.org/Movie'>
+                    <div class='main-info'>
+                      <a href='#'>
+                        <img alt='Póster Avatar' src='images/posters/avatar.jpg'>
+                      </a>
+                      <div class='extra-info'>
+                        <ul>
+                          <li>
+                            Lorem ipsum dolor sit amet, sit amet...
+                            <a href='#'>Más</a>
+                          </li>
+                          <li>
+                            <span itemprop='score'>4 de 5 estrellas.</span>
+                            <a href='#'>
+                              <strong>2,95&euro;</strong>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
+                    <h3>Avatar</h3>
+                    <time datetime='2010'>2010</time>
                   </div>
-                  <h3>127 Días</h3>
-                  <time datetime='2010'>2010</time>
                 </li>
-                <li class='large-2 columns' itemscope itemtype='http://schema.org/Movie'>
-                  <div class='movie'>
-                    <a href='#'>
-                      <img alt='Póster 127 Horas' src='images/posters/malefica.jpg'>
-                    </a>
-                    <div class='movie-hover'>
-                      <ul>
-                        <li>
-                          Lorem ipsum dolor sit amet, sit amet...
-                          <a href='#'>Más</a>
-                        </li>
-                        <li>
-                          <span itemprop='score'>4 de 5 estrellas.</span>
-                          <a href='#'>
-                            <strong>2,95&euro;</strong>
-                          </a>
-                        </li>
-                      </ul>
+                <li class='large-2 columns'>
+                  <div class='movie' data-genre='kids' data-new='true' data-type='film' itemscope itemtype='http://schema.org/Movie'>
+                    <div class='main-info'>
+                      <a href='#'>
+                        <img alt='Póster Maléfica' src='images/posters/malefica.jpg'>
+                      </a>
+                      <div class='extra-info'>
+                        <ul>
+                          <li>
+                            Lorem ipsum dolor sit amet, sit amet...
+                            <a href='#'>Más</a>
+                          </li>
+                          <li>
+                            <span itemprop='score'>4 de 5 estrellas.</span>
+                            <a href='#'>
+                              <strong>2,95&euro;</strong>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
+                    <h3>Maléfica</h3>
+                    <time datetime='2010'>2010</time>
                   </div>
-                  <h3>127 Días</h3>
-                  <time datetime='2010'>2010</time>
                 </li>
-              </ul>
-              <ul class='large-12 columns'>
-                <li class='large-2 columns' itemscope itemtype='http://schema.org/Movie'>
-                  <div class='movie'>
-                    <a href='#'>
-                      <img alt='Póster 127 Horas' src='images/posters/american-beauty.jpg'>
-                    </a>
-                    <div class='movie-hover'>
-                      <ul>
-                        <li>
-                          Lorem ipsum dolor sit amet, sit amet...
-                          <a href='#'>Más</a>
-                        </li>
-                        <li>
-                          <span itemprop='score'>4 de 5 estrellas.</span>
-                          <a href='#'>
-                            <strong>2,95&euro;</strong>
-                          </a>
-                        </li>
-                      </ul>
+                <li class='large-2 columns'>
+                  <div class='movie' data-genre='romance' data-new='false' data-type='film' itemscope itemtype='http://schema.org/Movie'>
+                    <div class='main-info'>
+                      <a href='#'>
+                        <img alt='Póster American Beauty' src='images/posters/american-beauty.jpg'>
+                      </a>
+                      <div class='extra-info'>
+                        <ul>
+                          <li>
+                            Lorem ipsum dolor sit amet, sit amet...
+                            <a href='#'>Más</a>
+                          </li>
+                          <li>
+                            <span itemprop='score'>4 de 5 estrellas.</span>
+                            <a href='#'>
+                              <strong>2,95&euro;</strong>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
+                    <h3>American Beauty</h3>
+                    <time datetime='2010'>2010</time>
                   </div>
-                  <h3>127 Días</h3>
-                  <time datetime='2010'>2010</time>
                 </li>
-                <li class='large-2 columns' itemscope itemtype='http://schema.org/Movie'>
-                  <div class='movie'>
-                    <a href='#'>
-                      <img alt='Póster 127 Horas' src='images/posters/tintin.jpg'>
-                    </a>
-                    <div class='movie-hover'>
-                      <ul>
-                        <li>
-                          Lorem ipsum dolor sit amet, sit amet...
-                          <a href='#'>Más</a>
-                        </li>
-                        <li>
-                          <span itemprop='score'>4 de 5 estrellas.</span>
-                          <a href='#'>
-                            <strong>2,95&euro;</strong>
-                          </a>
-                        </li>
-                      </ul>
+                <li class='large-2 columns'>
+                  <div class='movie' data-genre='animation' data-new='false' data-type='film' itemscope itemtype='http://schema.org/Movie'>
+                    <div class='main-info'>
+                      <a href='#'>
+                        <img alt='Póster Tintin' src='images/posters/tintin.jpg'>
+                      </a>
+                      <div class='extra-info'>
+                        <ul>
+                          <li>
+                            Lorem ipsum dolor sit amet, sit amet...
+                            <a href='#'>Más</a>
+                          </li>
+                          <li>
+                            <span itemprop='score'>4 de 5 estrellas.</span>
+                            <a href='#'>
+                              <strong>2,95&euro;</strong>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
+                    <h3>Tintin</h3>
+                    <time datetime='2010'>2010</time>
                   </div>
-                  <h3>127 Días</h3>
-                  <time datetime='2010'>2010</time>
                 </li>
-                <li class='large-2 columns' itemscope itemtype='http://schema.org/Movie'>
-                  <div class='movie'>
-                    <a href='#'>
-                      <img alt='Póster 127 Horas' src='images/posters/sinsajo.jpg'>
-                    </a>
-                    <div class='movie-hover'>
-                      <ul>
-                        <li>
-                          Lorem ipsum dolor sit amet, sit amet...
-                          <a href='#'>Más</a>
-                        </li>
-                        <li>
-                          <span itemprop='score'>4 de 5 estrellas.</span>
-                          <a href='#'>
-                            <strong>2,95&euro;</strong>
-                          </a>
-                        </li>
-                      </ul>
+                <li class='large-2 columns'>
+                  <div class='movie' data-genre='action' data-new='true' data-type='film' itemscope itemtype='http://schema.org/Movie'>
+                    <div class='main-info'>
+                      <a href='#'>
+                        <img alt='Póster Sinsajo' src='images/posters/sinsajo.jpg'>
+                      </a>
+                      <div class='extra-info'>
+                        <ul>
+                          <li>
+                            Lorem ipsum dolor sit amet, sit amet...
+                            <a href='#'>Más</a>
+                          </li>
+                          <li>
+                            <span itemprop='score'>4 de 5 estrellas.</span>
+                            <a href='#'>
+                              <strong>2,95&euro;</strong>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
+                    <h3>Sinsajo</h3>
+                    <time datetime='2010'>2010</time>
                   </div>
-                  <h3>127 Días</h3>
-                  <time datetime='2010'>2010</time>
                 </li>
-                <li class='large-2 columns' itemscope itemtype='http://schema.org/Movie'>
-                  <div class='movie'>
-                    <a href='#'>
-                      <img alt='Póster 127 Horas' src='images/posters/vengadores.jpg'>
-                    </a>
-                    <div class='movie-hover'>
-                      <ul>
-                        <li>
-                          Lorem ipsum dolor sit amet, sit amet...
-                          <a href='#'>Más</a>
-                        </li>
-                        <li>
-                          <span itemprop='score'>4 de 5 estrellas.</span>
-                          <a href='#'>
-                            <strong>2,95&euro;</strong>
-                          </a>
-                        </li>
-                      </ul>
+                <li class='large-2 columns'>
+                  <div class='movie' data-genre='action' data-new='false' data-type='film' itemscope itemtype='http://schema.org/Movie'>
+                    <div class='main-info'>
+                      <a href='#'>
+                        <img alt='Póster Vengadores' src='images/posters/vengadores.jpg'>
+                      </a>
+                      <div class='extra-info'>
+                        <ul>
+                          <li>
+                            Lorem ipsum dolor sit amet, sit amet...
+                            <a href='#'>Más</a>
+                          </li>
+                          <li>
+                            <span itemprop='score'>4 de 5 estrellas.</span>
+                            <a href='#'>
+                              <strong>2,95&euro;</strong>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
+                    <h3>Vengadores</h3>
+                    <time datetime='2010'>2010</time>
                   </div>
-                  <h3>127 Días</h3>
-                  <time datetime='2010'>2010</time>
                 </li>
-                <li class='large-2 columns' itemscope itemtype='http://schema.org/Movie'>
-                  <div class='movie'>
-                    <a href='#'>
-                      <img alt='Póster 127 Horas' src='images/posters/parque-jurasico.jpg'>
-                    </a>
-                    <div class='movie-hover'>
-                      <ul>
-                        <li>
-                          Lorem ipsum dolor sit amet, sit amet...
-                          <a href='#'>Más</a>
-                        </li>
-                        <li>
-                          <span itemprop='score'>4 de 5 estrellas.</span>
-                          <a href='#'>
-                            <strong>2,95&euro;</strong>
-                          </a>
-                        </li>
-                      </ul>
+                <li class='large-2 columns'>
+                  <div class='movie' data-genre='family' data-new='false' data-type='film' itemscope itemtype='http://schema.org/Movie'>
+                    <div class='main-info'>
+                      <a href='#'>
+                        <img alt='Póster Parque Jurásico' src='images/posters/parque-jurasico.jpg'>
+                      </a>
+                      <div class='extra-info'>
+                        <ul>
+                          <li>
+                            Lorem ipsum dolor sit amet, sit amet...
+                            <a href='#'>Más</a>
+                          </li>
+                          <li>
+                            <span itemprop='score'>4 de 5 estrellas.</span>
+                            <a href='#'>
+                              <strong>2,95&euro;</strong>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
+                    <h3>Parque Jurásico</h3>
+                    <time datetime='2010'>2010</time>
                   </div>
-                  <h3>127 Días</h3>
-                  <time datetime='2010'>2010</time>
                 </li>
-                <li class='large-2 columns' itemscope itemtype='http://schema.org/Movie'>
-                  <div class='movie'>
-                    <a href='#'>
-                      <img alt='Póster 127 Horas' src='images/posters/totoro.jpg'>
-                    </a>
-                    <div class='movie-hover'>
-                      <ul>
-                        <li>
-                          Lorem ipsum dolor sit amet, sit amet...
-                          <a href='#'>Más</a>
-                        </li>
-                        <li>
-                          <span itemprop='score'>4 de 5 estrellas.</span>
-                          <a href='#'>
-                            <strong>2,95&euro;</strong>
-                          </a>
-                        </li>
-                      </ul>
+                <li class='large-2 columns'>
+                  <div class='movie' data-genre='animation' data-new='false' data-type='film' itemscope itemtype='http://schema.org/Movie'>
+                    <div class='main-info'>
+                      <a href='#'>
+                        <img alt='Póster 127 Horas' src='images/posters/totoro.jpg'>
+                      </a>
+                      <div class='extra-info'>
+                        <ul>
+                          <li>
+                            Lorem ipsum dolor sit amet, sit amet...
+                            <a href='#'>Más</a>
+                          </li>
+                          <li>
+                            <span itemprop='score'>4 de 5 estrellas.</span>
+                            <a href='#'>
+                              <strong>2,95&euro;</strong>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
+                    <h3>Totoro</h3>
+                    <time datetime='2010'>2010</time>
                   </div>
-                  <h3>127 Días</h3>
-                  <time datetime='2010'>2010</time>
                 </li>
               </ul>
             </div>
@@ -704,6 +755,7 @@
           </div>
         </div>
       </div>
+      <script src='https://code.jquery.com/jquery-1.12.0.min.js'></script>
       <script src='javascripts/custom.js' type='text/javascript'></script>
     </footer>
   </body>

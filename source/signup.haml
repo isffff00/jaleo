@@ -1,174 +1,198 @@
 !!! 5
-%html(lang = "es")
-  %head
-    %meta(charset = "utf-8")
-    %title Los Vengadores La Era de Ultrón – Jaleo
-    %meta(name="description" content="Jaleo – Videoclub de Streaming Online")
+%html
+  %head(lang="es")
+    %meta(charset="utf-8")
+    %title Jaleo App
+    %meta(name="description" content="Jaleo – Videoclub de Strea%ming Online")
     %meta(name="author" content="Ramsés Cabello")
 
     / favicons
     %link(rel="icon" href="img/favicon.ico" type="image/x-icon")
-    %link(rel="apple-touch-icon" href="touch-icon-iphone.png")
-    %link(rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png")
-    %link(rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png")
-    %link(rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png")
+    -# %link(rel="apple-touch-icon" href="touch-icon-iphone.png")
+    -# %link(rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png")
+    -# %link(rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png")
+    -# %link(rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png")
+    %link(rel="stylesheet" type="text/css" href="stylesheets/signup.css")
+    %link(rel="stylesheet" type="text/css" href="stylesheets/sweetalert.css")
+    %link(href='https://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css')
+    %link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css')
+    %script(src="https://code.jquery.com/jquery-1.12.0.min.js")
 
-  %body
-    / header
-    %header
-      / logo
-      %a(href="#")
-        %h2 Jaleo
+%body
+  /skip to content
+  %a#skiptocontent(href="#main")Skip to content
 
-      / nav
-      %ul
-        %li
-          %a(href="#") Películas
-        %li
-          %a(href="#") Series
-        %li
-          %a(href="#") Explora
-        %li
-          %a(href="#") Iniciar Sesión
+  / main navigation & logo
+  %header
+    .row
+      .wrapper
+        .logo
+          %a(href="#")Jaleo
 
+        %nav
+          %ul
+            %li
+              %a(href="#")Películas
+            %li
+              %a(href="#")Series
+            %li
+              %a(href="#")Explora
+            %li
+              %a(href="#")Iniciar Sesión
 
-    %hr
     / disclaimer and login
-    %section(class="main" id="main")
-      %h1 Regístrate para empezar a ver Los Vengadores La Era de Ultrón
-      %p Una vez comiences a ver la película dispones de 72h. para verla cuantas veces y tantos los dispositivos como quieras.
-      %p
-        ¿Ya estás registrado?
-        %strong
-          %a(href='#') Inicia tu sesión
-        ahora.
+    .row
+      %section.large-8.columns.large-offset-2.sign-up(class="main" id="main")
+        %h1 Regístrate para empezar a ver Los Vengadores La Era de Ultrón
+        %p Una vez comiences a ver la película dispones de 72h. para verla cuantas veces y tantos los dispositivos como quieras.
+        %p
+          ¿Ya estás registrado?
+          %strong
+            %a(href='#') Inicia tu sesión
+          ahora.
 
-      / personal data
-      %hr
-      %form
-        %fieldset
-          %legend Datos personales
+        / personal data
+        %hr
+        %form(action="index.html" method="post" name="form" id="form")
+          %fieldset
+            %h2 Datos personales
+            %label(for="name") Nombre completo
+            %input(type="text" name="name" id="name")
 
-          %label(for="name") Nombre completo
-          %input(type="text" name="name" id="name")
+            %label(for="email") Correo Electrónico
+            %input(type="email" name="email" id="email")
 
-          %label(for="email") Correo Electrónico
-          %input(type="email" name="email" id="email")
-
-          %label(for="password") Contraseña
-          %input(type="password" name="password" id="password")
-
-        %fieldset
-          %legend Datos de pago
-          %span
-            %strong 2,95€
-
-          %label(for="payment-method") Método de pago
-          %input(type="radio" name="payment-method" value="Pay-pal") Paypal
-          %input(type="radio" name="payment-method" value="Credit-Card") Tarjeta de Crédito
-
-          .credit-card
-            %label(for="card-type") Tipo de tarjeta
-            %input(type="radio" name="card-type" value="Pay-pal") Visa
-            %input(type="radio" name="card-type" value="Pay-pal") MasterCard
-            %input(type="radio" name="card-type" value="Pay-pal") American Express
-            %input(type="radio" name="card-type" value="Pay-pal") Discovery Network
-
-            %label(for="card-number") Número de tarjeta
-            %input(type="text" pattern="[0-9](13,16)" name="card-number" id="card-number")
-
-            %label(for="expdate") Caducidad
-            %select(name="expdate-month")
-              %option Mes
-              %option Enero
-              %option Febrero
-              %option Marzo
-              %option Abril
-              %option Mayo
-              %option Junio
-              %option Julio
-              %option Agosto
-              %option Septiembre
-              %option Octubre
-              %option Noviembre
-              %option Diciembre
-
-            %select(name="expdate-year")
-              %option Año
-              %option 2016
-              %option 2017
-              %option 2018
-              %option 2019
-              %option 2020
-
-            %label(for="promotional-information")
-              %input(type="checkbox" name="promotional-information" id="promotional-information")
-              Recibir correos electrónicos ocasionales con noticias y novedades de Jaleo.
+            %label(for="password") Contraseña
+            %input(type="password" name="password" id="password")
 
           %fieldset
-            %input(type="submir" value="Regístrate")
+            %h2 Datos de pago
+            %span
+              %strong 2,95€
 
-        %p
-          Al registrarte estás de acuerdo con nuestros
-          %a(href="#") términos de uso
-          y
-          %a(href="#") política de privacidad
+            %label(for="payment-method") Método de pago
+            %input(type="radio" name="payment-method" value="Pay-pal") Paypal
+            %input(type="radio" name="payment-method" value="Credit-Card") Tarjeta de Crédito
 
-        %p
-          ¿Necesitas ayuda?
-          %a(href="#") Contacta con nosotros.
+            .credit-card
+              %label(for="card-type") Tipo de tarjeta
+              %input(type="radio" name="card-type" value="visa") Visa
+              %input(type="radio" name="card-type" value="mastercard") MasterCard
+              %input(type="radio" name="card-type" value="amex") American Express
+              %input(type="radio" name="card-type" value="discover") Discovery Network
 
-    / main footer
+              %label(for="card-number") Número de tarjeta
+              %input(type="text" name="card-number" id="cc-num")
+
+              %label(for="expdate") Caducidad
+              %select(name="expdate-month")
+                %option Mes
+                %option Enero
+                %option Febrero
+                %option Marzo
+                %option Abril
+                %option Mayo
+                %option Junio
+                %option Julio
+                %option Agosto
+                %option Septiembre
+                %option Octubre
+                %option Noviembre
+                %option Diciembre
+
+              %select(name="expdate-year")
+                %option Año
+                %option 2016
+                %option 2017
+                %option 2018
+                %option 2019
+                %option 2020
+
+              %label(for="card-number") CVV
+              %input(type="text" name="card-number" id="cc-cvc")
+
+              %label(for="promotional-information")
+                %input(type="checkbox" name="promotional-information" id="promotional-information")
+                Recibir correos electrónicos ocasionales con noticias y novedades de Jaleo.
+
+            %fieldset
+              %input(type="submit" id="checkout" value="Regístrate")
+
+          %p
+            Al registrarte estás de acuerdo con nuestros
+            %a(href="#") términos de uso
+            y
+            %a(href="#") política de privacidad
+
+          %p
+            ¿Necesitas ayuda?
+            %a(href="#") Contacta con nosotros.
+
+    /main footer
     %footer
-      / page links
-      %h2 Página
-      %ul
-        %li
-          %a(href = "") Blog
-        %li
-          %a(href = "") Prensa
-        %li
-          %a(href = "") Condiciones de Uso
-        %li
-          %a(href = "") Privacidad
-        %li
-          %a(href = "") Soporte
-      / corporate links
-      %h2 Corporativo
-      %ul
-        %li
-          %a(href = "") Nosotros
-        %li
-          %a(href = "") Contacto
-        %li
-          %a(href = "#" hreflang = "en") English Site
-        %li
-          %a(href = "#" hreflang = "de") Deutsch Website
-        %li
-          %a(href = "#" hreflang = "fr") Site français
-      / social links
-      %h2 Síguenos
-      %ul
-        %li
-          %a(href = "#") Facebook
-        %li
-          %a(href = "#") Twitter
-        %li
-          %a(href = "#") Pinterest
-      / about
-      %h2 Dirección
-      %small(rel = "license") ©  Jaleo de España S.A.
-      .vcard
-        %p.fn
-          %a.url(href = "#") Jaleo
-        %p
-        %p.adr
-          %span.street-address Calle del Rey 23
-          %br/
-          %span.postal-code 28080
-          %span.region MADRID
-          %br/
-          %span.country-name(style = "displaynone") España
-        %p.tel 0034 555 55 65 85
-        %a(href = "mailtoinfo@jaleoapp.es") info@jaleoapp.es
-    / / main footer
+      .row
+        .large-3.columns
+          /page links
+          %h2 Página
+          %ul
+            %li
+              %a(href="#") Blog
+            %li
+              %a(href="#") Prensa
+            %li
+              %a(href="#") Condiciones de Uso
+            %li
+              %a(href="#") Privacidad
+            %li
+              %a(href="#") Soporte
+
+        .large-3.columns
+          /corporate links
+          %h2 Corporativo
+          %ul
+            %li
+              %a(href="#") Nosotros
+            %li
+              %a(href="#") Contacto
+            %li
+              %a(href="#" hreflang="en") English Site
+            %li
+              %a(href="#" hreflang="de") Deutsch Website
+            %li
+              %a(href="#" hreflang="fr") Site Français
+
+        .large-3.columns
+          /social links
+          %h2 Síguenos
+          %ul
+            %li
+              %a(href="#") Facebook
+            %li
+              %a(href="#") Facebook
+            %li
+              %a(href="#") Facebook
+
+        .large-3.columns
+          /about
+          .footer-info
+            .logo
+              %a(href="#")Jaleo
+            %hr
+            %h2.hidden Dirección
+            .vcard
+              %p.fn.hidden
+                %a.url(href="#") Jaleo
+              %p.adr
+                %small(rel="license") &copy;  Jaleo de España S.A.
+                %br
+                %span.street-address Calle del Rey, 23
+                %span.postal-code 28080
+                %span.region MADRID
+                %span.country-name España
+              %p.tel 0034 555 55 65 85
+              %p
+                %a(href="mailto:info@jaleoapp.es") info&#x40;jaleoapp.es
+
+      %script(type="text/javascript" src="javascripts/jquery.payment.min.js")
+      %script(type="text/javascript" src="javascripts/sweetalert.min.js")
+      %script(type="text/javascript" src="javascripts/custom.js")

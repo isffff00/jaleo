@@ -8,13 +8,14 @@
 
     / favicons
     %link(rel="icon" href="img/favicon.ico" type="image/x-icon")
-    %link(rel="apple-touch-icon" href="touch-icon-iphone.png")
-    %link(rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png")
-    %link(rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png")
-    %link(rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png")
+    -# %link(rel="apple-touch-icon" href="touch-icon-iphone.png")
+    -# %link(rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png")
+    -# %link(rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png")
+    -# %link(rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png")
     %link(rel="stylesheet" type="text/css" href="stylesheets/index.css")
     %link(href='https://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css')
     %link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css')
+    %script(src="https://code.jquery.com/jquery-1.12.0.min.js")
   %body
     /skip to content
     %a#skiptocontent(href="#main")Skip to content
@@ -65,7 +66,7 @@
                 %span(itemprop="score") 4 de 5 estrellas
 
           .more-info.large-2.columns
-            %a.secondary-button(href="#") Más Info
+            %a.secondary-button(href="http://google.com") Más Info
 
           .watch-now.large-2.columns
             %a.primary-button(href="#")
@@ -88,11 +89,29 @@
 
                   %label(for="movie-type") Tipo
                   %select#movie-type(name="movie-type")
-                    %option Tipo
+                    %option(value="00") Tipo
+                    %option(value="film") Películas
+                    %option(value="show") Series
 
                   %label(for="movie-genre") Género
                   %select#movie-genre(name="movie-genre")
-                    %option Género
+                    %option(value="00") Género
+                    %option(value="family") Para toda la familia
+                    %option(value="action") Acción y aventuras
+                    %option(value="animation") Animación
+                    %option(value="drama") Drama
+                    %option(value="comedia") Comedia
+                    %option(value="science-fiction") Ciencia ficción y fantasía
+                    %option(value="classic") Clásicos
+                    %option(value="sports") Deportes
+                    %option(value="documentary") Documental
+                    %option(value="indie") Independiente
+                    %option(value="kids") Infantil
+                    %option(value="musical") Musical
+                    %option(value="romance") Romance
+                    %option(value="horror") Terror y suspense
+                    %optio(value="western")n Western
+
 
                   %label(for="new-releases")
                     %input#new-releases(type="checkbox" name="new-releases") Sólo novedades
@@ -110,334 +129,355 @@
               %fieldset
                 %input(type="submit" value="Actualizar lista")
 
+
+          .row
+            .large-12.columns.no-results
+              No existe multimedia con este criterio.
+
           .row
             .film-grid
               %ul.large-12.columns
-                %li.large-2.columns(itemscope itemtype="http://schema.org/Movie")
-                  .movie
-                    %a(href="#")
-                      %img(src="images/posters/127-dias.jpg" alt="Póster 127 Horas")
+                %li.large-2.columns
+                  .movie(data-type="film" data-genre="drama" data-new="false" itemscope itemtype="http://schema.org/Movie")
+                    .main-info(data-href="http://www.imdb.com/title/tt1542344/externalsites")
+                      %a(href="#")
+                        %img(src="images/posters/127-dias.jpg" alt="Póster 127 Horas")
 
-                    .movie-hover
-                      %ul
-                        %li
-                          Lorem ipsum dolor sit amet, sit amet...
-                          %a(href="#") Más
-                        %li
-                          %span(itemprop="score")4 de 5 estrellas.
-                          %a(href="#")
-                            %strong 2,95&euro;
+                      .extra-info
+                        %ul
+                          %li
+                            Lorem ipsum dolor sit amet, sit amet...
+                            %a(href="#") Más
+                          %li
+                            %span(itemprop="score")4 de 5 estrellas.
+                            %a(href="#")
+                              %strong 2,95&euro;
 
-                  %h3 127 Días
-                  %time(datetime="2010") 2010
+                    %h3 127 Días
+                    %time(datetime="2010") 2010
 
-                %li.large-2.columns(itemscope itemtype="http://schema.org/Movie")
-                  .movie
-                    %a(href="#")
-                      %img(src="images/posters/apocalypse-now.jpg" alt="Póster 127 Horas")
+                %li.large-2.columns
+                  .movie(data-type="film" data-genre="horror" data-new="false" itemscope itemtype="http://schema.org/Movie")
+                    .main-info
+                      %a(href="#")
+                        %img(src="images/posters/apocalypse-now.jpg" alt="Póster Apocalypse Now")
 
-                    .movie-hover
-                      %ul
-                        %li
-                          Lorem ipsum dolor sit amet, sit amet...
-                          %a(href="#") Más
-                        %li
-                          %span(itemprop="score")4 de 5 estrellas.
-                          %a(href="#")
-                            %strong 2,95&euro;
+                      .extra-info
+                        %ul
+                          %li
+                            Lorem ipsum dolor sit amet, sit amet...
+                            %a(href="#") Más
+                          %li
+                            %span(itemprop="score")4 de 5 estrellas.
+                            %a(href="#")
+                              %strong 2,95&euro;
 
-                  %h3 127 Días
-                  %time(datetime="2010") 2010
+                    %h3 Apocalypse Now
+                    %time(datetime="2010") 2010
 
-                %li.large-2.columns(itemscope itemtype="http://schema.org/Movie")
-                  .movie
-                    %a(href="#")
-                      %img(src="images/posters/dracula.jpg" alt="Póster 127 Horas")
+                %li.large-2.columns
+                  .movie(data-type="film" data-genre="classic" data-new="false" itemscope itemtype="http://schema.org/Movie")
+                    .main-info
+                      %a(href="#")
+                        %img(src="images/posters/dracula.jpg" alt="Póster Dracula")
 
-                    .movie-hover
-                      %ul
-                        %li
-                          Lorem ipsum dolor sit amet, sit amet...
-                          %a(href="#") Más
-                        %li
-                          %span(itemprop="score")4 de 5 estrellas.
-                          %a(href="#")
-                            %strong 2,95&euro;
+                      .extra-info
+                        %ul
+                          %li
+                            Lorem ipsum dolor sit amet, sit amet...
+                            %a(href="#") Más
+                          %li
+                            %span(itemprop="score")4 de 5 estrellas.
+                            %a(href="#")
+                              %strong 2,95&euro;
 
-                  %h3 127 Días
-                  %time(datetime="2010") 2010
+                    %h3 Dracula
+                    %time(datetime="2010") 2010
 
-                %li.large-2.columns(itemscope itemtype="http://schema.org/Movie")
-                  .movie
-                    %a(href="#")
-                      %img(src="images/posters/selma.jpg" alt="Póster 127 Horas")
+                %li.large-2.columns
+                  .movie(data-type="film" data-genre="drama" data-new="true" itemscope itemtype="http://schema.org/Movie")
+                    .main-info
+                      %a(href="#")
+                        %img(src="images/posters/selma.jpg" alt="Póster Selma")
 
-                    .movie-hover
-                      %ul
-                        %li
-                          Lorem ipsum dolor sit amet, sit amet...
-                          %a(href="#") Más
-                        %li
-                          %span(itemprop="score")4 de 5 estrellas.
-                          %a(href="#")
-                            %strong 2,95&euro;
+                      .extra-info
+                        %ul
+                          %li
+                            Lorem ipsum dolor sit amet, sit amet...
+                            %a(href="#") Más
+                          %li
+                            %span(itemprop="score")4 de 5 estrellas.
+                            %a(href="#")
+                              %strong 2,95&euro;
 
-                  %h3 127 Días
-                  %time(datetime="2010") 2010
+                    %h3 Selma
+                    %time(datetime="2010") 2010
 
-                %li.large-2.columns(itemscope itemtype="http://schema.org/Movie")
-                  .movie
-                    %a(href="#")
-                      %img(src="images/posters/batman.jpg" alt="Póster 127 Horas")
+                %li.large-2.columns
+                  .movie(data-type="show" data-genre="action" data-new="false" itemscope itemtype="http://schema.org/Movie")
+                    .main-info
+                      %a(href="#")
+                        %img(src="images/posters/batman.jpg" alt="Póster Batman")
 
-                    .movie-hover
-                      %ul
-                        %li
-                          Lorem ipsum dolor sit amet, sit amet...
-                          %a(href="#") Más
-                        %li
-                          %span(itemprop="score")4 de 5 estrellas.
-                          %a(href="#")
-                            %strong 2,95&euro;
+                      .extra-info
+                        %ul
+                          %li
+                            Lorem ipsum dolor sit amet, sit amet...
+                            %a(href="#") Más
+                          %li
+                            %span(itemprop="score")4 de 5 estrellas.
+                            %a(href="#")
+                              %strong 2,95&euro;
 
-                  %h3 127 Días
-                  %time(datetime="2010") 2010
+                    %h3 Batman
+                    %time(datetime="2010") 2010
 
-                %li.large-2.columns(itemscope itemtype="http://schema.org/Movie")
-                  .movie
-                    %a(href="#")
-                      %img(src="images/posters/et.jpg" alt="Póster 127 Horas")
+                %li.large-2.columns
+                  .movie(data-type="film" data-genre="science-fiction" data-new="false" itemscope itemtype="http://schema.org/Movie")
+                    .main-info
+                      %a(href="#")
+                        %img(src="images/posters/et.jpg" alt="Póster E.T.")
 
-                    .movie-hover
-                      %ul
-                        %li
-                          Lorem ipsum dolor sit amet, sit amet...
-                          %a(href="#") Más
-                        %li
-                          %span(itemprop="score")4 de 5 estrellas.
-                          %a(href="#")
-                            %strong 2,95&euro;
+                      .extra-info
+                        %ul
+                          %li
+                            Lorem ipsum dolor sit amet, sit amet...
+                            %a(href="#") Más
+                          %li
+                            %span(itemprop="score")4 de 5 estrellas.
+                            %a(href="#")
+                              %strong 2,95&euro;
 
-                  %h3 127 Días
-                  %time(datetime="2010") 2010
+                    %h3 E.T.
+                    %time(datetime="2010") 2010
 
-              %ul.large-12.columns
-                %li.large-2.columns(itemscope itemtype="http://schema.org/Movie")
-                  .movie
-                    %a(href="#")
-                      %img(src="images/posters/amelie.jpg" alt="Póster 127 Horas")
+                %li.large-2.columns
+                  .movie(data-type="film" data-genre="indie" data-new="false" itemscope itemtype="http://schema.org/Movie")
+                    .main-info
+                      %a(href="#")
+                        %img(src="images/posters/amelie.jpg" alt="Póster Amelie")
 
-                    .movie-hover
-                      %ul
-                        %li
-                          Lorem ipsum dolor sit amet, sit amet...
-                          %a(href="#") Más
-                        %li
-                          %span(itemprop="score")4 de 5 estrellas.
-                          %a(href="#")
-                            %strong 2,95&euro;
+                      .extra-info
+                        %ul
+                          %li
+                            Lorem ipsum dolor sit amet, sit amet...
+                            %a(href="#") Más
+                          %li
+                            %span(itemprop="score")4 de 5 estrellas.
+                            %a(href="#")
+                              %strong 2,95&euro;
 
-                  %h3 127 Días
-                  %time(datetime="2010") 2010
+                    %h3 Amelie
+                    %time(datetime="2010") 2010
 
-                %li.large-2.columns(itemscope itemtype="http://schema.org/Movie")
-                  .movie
-                    %a(href="#")
-                      %img(src="images/posters/cisne-negro.jpg" alt="Póster 127 Horas")
+                %li.large-2.columns
+                  .movie(data-type="film" data-genre="drama" data-new="false" itemscope itemtype="http://schema.org/Movie")
+                    .main-info
+                      %a(href="#")
+                        %img(src="images/posters/cisne-negro.jpg" alt="Póster Cisne Negro")
 
-                    .movie-hover
-                      %ul
-                        %li
-                          Lorem ipsum dolor sit amet, sit amet...
-                          %a(href="#") Más
-                        %li
-                          %span(itemprop="score")4 de 5 estrellas.
-                          %a(href="#")
-                            %strong 2,95&euro;
+                      .extra-info
+                        %ul
+                          %li
+                            Lorem ipsum dolor sit amet, sit amet...
+                            %a(href="#") Más
+                          %li
+                            %span(itemprop="score")4 de 5 estrellas.
+                            %a(href="#")
+                              %strong 2,95&euro;
 
-                  %h3 127 Días
-                  %time(datetime="2010") 2010
+                    %h3 Cisne Negro
+                    %time(datetime="2010") 2010
 
-                %li.large-2.columns(itemscope itemtype="http://schema.org/Movie")
-                  .movie
-                    %a(href="#")
-                      %img(src="images/posters/her.jpg" alt="Póster 127 Horas")
+                %li.large-2.columns
+                  .movie(data-type="film" data-genre="science-fiction" data-new="false" itemscope itemtype="http://schema.org/Movie")
+                    .main-info
+                      %a(href="#")
+                        %img(src="images/posters/her.jpg" alt="Póster HER")
 
-                    .movie-hover
-                      %ul
-                        %li
-                          Lorem ipsum dolor sit amet, sit amet...
-                          %a(href="#") Más
-                        %li
-                          %span(itemprop="score")4 de 5 estrellas.
-                          %a(href="#")
-                            %strong 2,95&euro;
+                      .extra-info
+                        %ul
+                          %li
+                            Lorem ipsum dolor sit amet, sit amet...
+                            %a(href="#") Más
+                          %li
+                            %span(itemprop="score")4 de 5 estrellas.
+                            %a(href="#")
+                              %strong 2,95&euro;
 
-                  %h3 127 Días
-                  %time(datetime="2010") 2010
+                    %h3 HER
+                    %time(datetime="2010") 2010
 
-                %li.large-2.columns(itemscope itemtype="http://schema.org/Movie")
-                  .movie
-                    %a(href="#")
-                      %img(src="images/posters/el-silencio-de-los-corderos.jpg" alt="Póster 127 Horas")
+                %li.large-2.columns
+                  .movie(data-type="film" data-genre="horror" data-new="false" itemscope itemtype="http://schema.org/Movie")
+                    .main-info
+                      %a(href="#")
+                        %img(src="images/posters/el-silencio-de-los-corderos.jpg" alt="Póster El silencio de los corderos")
 
-                    .movie-hover
-                      %ul
-                        %li
-                          Lorem ipsum dolor sit amet, sit amet...
-                          %a(href="#") Más
-                        %li
-                          %span(itemprop="score")4 de 5 estrellas.
-                          %a(href="#")
-                            %strong 2,95&euro;
+                      .extra-info
+                        %ul
+                          %li
+                            Lorem ipsum dolor sit amet, sit amet...
+                            %a(href="#") Más
+                          %li
+                            %span(itemprop="score")4 de 5 estrellas.
+                            %a(href="#")
+                              %strong 2,95&euro;
 
-                  %h3 127 Días
-                  %time(datetime="2010") 2010
+                    %h3 El silencio de...
+                    %time(datetime="2010") 2010
 
-                %li.large-2.columns(itemscope itemtype="http://schema.org/Movie")
-                  .movie
-                    %a(href="#")
-                      %img(src="images/posters/avatar.jpg" alt="Póster 127 Horas")
+                %li.large-2.columns
+                  .movie(data-type="film" data-genre="adventure" data-new="false" itemscope itemtype="http://schema.org/Movie")
+                    .main-info
+                      %a(href="#")
+                        %img(src="images/posters/avatar.jpg" alt="Póster Avatar")
 
-                    .movie-hover
-                      %ul
-                        %li
-                          Lorem ipsum dolor sit amet, sit amet...
-                          %a(href="#") Más
-                        %li
-                          %span(itemprop="score")4 de 5 estrellas.
-                          %a(href="#")
-                            %strong 2,95&euro;
+                      .extra-info
+                        %ul
+                          %li
+                            Lorem ipsum dolor sit amet, sit amet...
+                            %a(href="#") Más
+                          %li
+                            %span(itemprop="score")4 de 5 estrellas.
+                            %a(href="#")
+                              %strong 2,95&euro;
 
-                  %h3 127 Días
-                  %time(datetime="2010") 2010
+                    %h3 Avatar
+                    %time(datetime="2010") 2010
 
-                %li.large-2.columns(itemscope itemtype="http://schema.org/Movie")
-                  .movie
-                    %a(href="#")
-                      %img(src="images/posters/malefica.jpg" alt="Póster 127 Horas")
+                %li.large-2.columns
+                  .movie(data-type="film" data-genre="kids" data-new="true" itemscope itemtype="http://schema.org/Movie")
+                    .main-info
+                      %a(href="#")
+                        %img(src="images/posters/malefica.jpg" alt="Póster Maléfica")
 
-                    .movie-hover
-                      %ul
-                        %li
-                          Lorem ipsum dolor sit amet, sit amet...
-                          %a(href="#") Más
-                        %li
-                          %span(itemprop="score")4 de 5 estrellas.
-                          %a(href="#")
-                            %strong 2,95&euro;
+                      .extra-info
+                        %ul
+                          %li
+                            Lorem ipsum dolor sit amet, sit amet...
+                            %a(href="#") Más
+                          %li
+                            %span(itemprop="score")4 de 5 estrellas.
+                            %a(href="#")
+                              %strong 2,95&euro;
 
-                  %h3 127 Días
-                  %time(datetime="2010") 2010
+                    %h3 Maléfica
+                    %time(datetime="2010") 2010
 
-              %ul.large-12.columns
-                %li.large-2.columns(itemscope itemtype="http://schema.org/Movie")
-                  .movie
-                    %a(href="#")
-                      %img(src="images/posters/american-beauty.jpg" alt="Póster 127 Horas")
+                %li.large-2.columns
+                  .movie(data-type="film" data-genre="romance" data-new="false" itemscope itemtype="http://schema.org/Movie")
+                    .main-info
+                      %a(href="#")
+                        %img(src="images/posters/american-beauty.jpg" alt="Póster American Beauty")
 
-                    .movie-hover
-                      %ul
-                        %li
-                          Lorem ipsum dolor sit amet, sit amet...
-                          %a(href="#") Más
-                        %li
-                          %span(itemprop="score")4 de 5 estrellas.
-                          %a(href="#")
-                            %strong 2,95&euro;
+                      .extra-info
+                        %ul
+                          %li
+                            Lorem ipsum dolor sit amet, sit amet...
+                            %a(href="#") Más
+                          %li
+                            %span(itemprop="score")4 de 5 estrellas.
+                            %a(href="#")
+                              %strong 2,95&euro;
 
-                  %h3 127 Días
-                  %time(datetime="2010") 2010
+                    %h3 American Beauty
+                    %time(datetime="2010") 2010
 
-                %li.large-2.columns(itemscope itemtype="http://schema.org/Movie")
-                  .movie
-                    %a(href="#")
-                      %img(src="images/posters/tintin.jpg" alt="Póster 127 Horas")
+                %li.large-2.columns
+                  .movie(data-type="film" data-genre="animation" data-new="false" itemscope itemtype="http://schema.org/Movie")
+                    .main-info
+                      %a(href="#")
+                        %img(src="images/posters/tintin.jpg" alt="Póster Tintin")
 
-                    .movie-hover
-                      %ul
-                        %li
-                          Lorem ipsum dolor sit amet, sit amet...
-                          %a(href="#") Más
-                        %li
-                          %span(itemprop="score")4 de 5 estrellas.
-                          %a(href="#")
-                            %strong 2,95&euro;
+                      .extra-info
+                        %ul
+                          %li
+                            Lorem ipsum dolor sit amet, sit amet...
+                            %a(href="#") Más
+                          %li
+                            %span(itemprop="score")4 de 5 estrellas.
+                            %a(href="#")
+                              %strong 2,95&euro;
 
-                  %h3 127 Días
-                  %time(datetime="2010") 2010
+                    %h3 Tintin
+                    %time(datetime="2010") 2010
 
-                %li.large-2.columns(itemscope itemtype="http://schema.org/Movie")
-                  .movie
-                    %a(href="#")
-                      %img(src="images/posters/sinsajo.jpg" alt="Póster 127 Horas")
+                %li.large-2.columns
+                  .movie(data-type="film" data-genre="action" data-new="true" itemscope itemtype="http://schema.org/Movie")
+                    .main-info
+                      %a(href="#")
+                        %img(src="images/posters/sinsajo.jpg" alt="Póster Sinsajo")
 
-                    .movie-hover
-                      %ul
-                        %li
-                          Lorem ipsum dolor sit amet, sit amet...
-                          %a(href="#") Más
-                        %li
-                          %span(itemprop="score")4 de 5 estrellas.
-                          %a(href="#")
-                            %strong 2,95&euro;
+                      .extra-info
+                        %ul
+                          %li
+                            Lorem ipsum dolor sit amet, sit amet...
+                            %a(href="#") Más
+                          %li
+                            %span(itemprop="score")4 de 5 estrellas.
+                            %a(href="#")
+                              %strong 2,95&euro;
 
-                  %h3 127 Días
-                  %time(datetime="2010") 2010
+                    %h3 Sinsajo
+                    %time(datetime="2010") 2010
 
-                %li.large-2.columns(itemscope itemtype="http://schema.org/Movie")
-                  .movie
-                    %a(href="#")
-                      %img(src="images/posters/vengadores.jpg" alt="Póster 127 Horas")
+                %li.large-2.columns
+                  .movie(data-type="film" data-genre="action" data-new="false" itemscope itemtype="http://schema.org/Movie")
+                    .main-info
+                      %a(href="#")
+                        %img(src="images/posters/vengadores.jpg" alt="Póster Vengadores")
 
-                    .movie-hover
-                      %ul
-                        %li
-                          Lorem ipsum dolor sit amet, sit amet...
-                          %a(href="#") Más
-                        %li
-                          %span(itemprop="score")4 de 5 estrellas.
-                          %a(href="#")
-                            %strong 2,95&euro;
+                      .extra-info
+                        %ul
+                          %li
+                            Lorem ipsum dolor sit amet, sit amet...
+                            %a(href="#") Más
+                          %li
+                            %span(itemprop="score")4 de 5 estrellas.
+                            %a(href="#")
+                              %strong 2,95&euro;
 
-                  %h3 127 Días
-                  %time(datetime="2010") 2010
+                    %h3 Vengadores
+                    %time(datetime="2010") 2010
 
-                %li.large-2.columns(itemscope itemtype="http://schema.org/Movie")
-                  .movie
-                    %a(href="#")
-                      %img(src="images/posters/parque-jurasico.jpg" alt="Póster 127 Horas")
+                %li.large-2.columns
+                  .movie(data-type="film" data-genre="family" data-new="false" itemscope itemtype="http://schema.org/Movie")
+                    .main-info
+                      %a(href="#")
+                        %img(src="images/posters/parque-jurasico.jpg" alt="Póster Parque Jurásico")
 
-                    .movie-hover
-                      %ul
-                        %li
-                          Lorem ipsum dolor sit amet, sit amet...
-                          %a(href="#") Más
-                        %li
-                          %span(itemprop="score")4 de 5 estrellas.
-                          %a(href="#")
-                            %strong 2,95&euro;
+                      .extra-info
+                        %ul
+                          %li
+                            Lorem ipsum dolor sit amet, sit amet...
+                            %a(href="#") Más
+                          %li
+                            %span(itemprop="score")4 de 5 estrellas.
+                            %a(href="#")
+                              %strong 2,95&euro;
 
-                  %h3 127 Días
-                  %time(datetime="2010") 2010
+                    %h3 Parque Jurásico
+                    %time(datetime="2010") 2010
 
-                %li.large-2.columns(itemscope itemtype="http://schema.org/Movie")
-                  .movie
-                    %a(href="#")
-                      %img(src="images/posters/totoro.jpg" alt="Póster 127 Horas")
+                %li.large-2.columns
+                  .movie(data-type="film" data-genre="animation" data-new="false" itemscope itemtype="http://schema.org/Movie")
+                    .main-info
+                      %a(href="#")
+                        %img(src="images/posters/totoro.jpg" alt="Póster 127 Horas")
 
-                    .movie-hover
-                      %ul
-                        %li
-                          Lorem ipsum dolor sit amet, sit amet...
-                          %a(href="#") Más
-                        %li
-                          %span(itemprop="score")4 de 5 estrellas.
-                          %a(href="#")
-                            %strong 2,95&euro;
+                      .extra-info
+                        %ul
+                          %li
+                            Lorem ipsum dolor sit amet, sit amet...
+                            %a(href="#") Más
+                          %li
+                            %span(itemprop="score")4 de 5 estrellas.
+                            %a(href="#")
+                              %strong 2,95&euro;
 
-                  %h3 127 Días
-                  %time(datetime="2010") 2010
+                    %h3 Totoro
+                    %time(datetime="2010") 2010
         .row
           .pagination.large-12.columns
             %p Tenemos 456 referencias
@@ -545,4 +585,5 @@
               %p
                 %a(href="mailto:info@jaleoapp.es") info&#x40;jaleoapp.es
 
+      %script(src="https://code.jquery.com/jquery-1.12.0.min.js")
       %script(type="text/javascript" src="javascripts/custom.js")
